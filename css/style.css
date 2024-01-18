@@ -15,6 +15,10 @@
     font-family: 'worath';
     src: url('../fonts/Worath.otf') format('opentype');
 }
+*{
+  margin: 0;
+  padding: 0;
+}
 
 html {
   color: #222;
@@ -25,12 +29,11 @@ html {
 body{
   display: flex;
   flex-direction: column;
-  background: url('../img/background.svg');
+  background-image: url('../img/background.svg');
 }
 
 nav {
   font-size: 1.5rem;
-  box-shadow: 3px 3px 5px rgba(0, 0,0, 0.1);
 }
 nav ul{
   width: 100vw;
