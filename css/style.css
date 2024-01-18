@@ -23,6 +23,8 @@ html {
 }
 
 body{
+  display: flex;
+  flex-direction: column;
   background: url('../img/background.svg');
 }
 
@@ -177,6 +179,183 @@ body{
   top:20vh;
 }
 
+
+/*
+
+
+
+
+
+
+
+*/
+
+.FAQsection{
+  position: relative;
+  top:70vh;
+
+}
+
+.background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+#background1 {
+  background-image: url('../img/background.svg');
+}
+
+#background2 {
+  background-image: url('../img/background.svg');
+}
+
+
+
+.faq{
+
+  justify-items: center;
+  text-align: center;
+}
+
+.faq-item {
+  margin: auto;
+  padding: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.faq-title{
+  font-family: Playfair Display;
+font-size: 36px;
+font-weight: 600;
+line-height: 48px;
+letter-spacing: 0.05em;
+text-align: left;
+background: #06BD2E73;
+
+}
+.question {
+  /* background-color: lightgreen; */
+  position: relative;
+  padding: 9px;
+  display: flex;
+  color : white;
+  background: linear-gradient(0deg, rgba(17, 227, 50, 0.15), rgba(17, 227, 50, 0.15)),
+linear-gradient(0deg, rgba(176, 223, 183, 0.3), rgba(176, 223, 183, 0.3));
+
+  justify-content: space-between;
+  align-items: center;
+  border: 3px solid #11E33226;
+  font-weight: bold;
+  z-index: 1;
+}
+.arrow-icon{
+  width: 20px;
+  height: 20px;
+}
+.drawing {
+  width: 100%;
+  height: 300px;
+
+}
+.contact-us {
+  font-family: 'Playfair Display', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: 0em;
+  text-align: center;
+  background: linear-gradient(90deg, #03FF58 0%, #53CA7C 31.42%, #149B42 62.74%, #93F2B3 103.03%, #09A73F 103.03%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.icons{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.drawing img {
+  max-width: 100%;
+  height: auto;
+}
+
+.answer {
+  display: none;
+  position: relative;
+  opacity: 0.65;
+  background: #40C555A6;
+
+  color: black;
+  padding: 10px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 0;
+}
+
+@keyframes fadeInDown {
+  from {
+      transform: translateY(-30px);
+  }
+  to {
+      transform: translateY(0);
+  }
+}
+@keyframes fadeOutUp {
+  from {
+      transform: translateY(0);
+  }
+  to {
+      transform: translateY(-30px);
+  }
+}
+
+
+
+.contact-section {
+  width: 150px;
+  height: 33px;
+  position: relative;
+  top: 32px;
+  left: 88px;
+  font-family: 'Worath', sans-serif;
+  font-weight: 400;
+}
+
+.contact-section h2 {
+  font-size: 34px;
+  line-height: 33.08px;
+  text-align: center;
+  background: linear-gradient(#11E332, #35FF55, #4CDA62, #6AD07A, #40C555, #00FF29);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.contact-btn {
+  background: linear-gradient(#11E332, #35FF55, #4CDA62, #6AD07A, #40C555, #00FF29);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+#diamond-design{
+  width: 40vw;
+  height: auto;
+  position: absolute;
+  right: 50%;
+}
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
