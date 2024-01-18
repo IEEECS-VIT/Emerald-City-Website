@@ -28,6 +28,104 @@ body{
   background: url('../img/background.svg');
 }
 
+
+.titlesection{
+  margin-bottom: 1vh;
+}
+
+.img1{
+  position: relative;
+  left: 87%;
+  top: 2em;
+}
+.head{
+  position: relative;
+  top: 1.5em;
+
+}
+
+.reg{
+  /* background-color: #118223;
+  color: #ffffff;
+  border-radius: 10px;
+  width: 55%;
+  height: 2.5em;
+  opacity: 0.77;*/
+  font-size: large;
+  
+  position: relative;
+  top: 2.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+} 
+
+
+/* .frontp{
+  color: #118223;
+  font-family: Worath; 
+  font-size: 25px;
+  font-weight: 20 ;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;   
+} */
+
+.about{
+  color: #118223;
+  font-family: worath; 
+  font-size: 20px;
+ 
+  line-height: 22px;
+  letter-spacing: 0em;
+  position: relative;
+  top: 3.9em;
+  /* text-align: left; */
+}
+
+.info{
+  color: white;
+  position: relative;
+  top: 4em;
+  left: 0.4em;
+  
+}
+
+.img3{
+  position: relative;
+  right: 35%;
+  top: 1.5em;
+  
+}
+
+.img2{
+  position: relative;
+  top: 6em;
+/* very small diamond */
+}
+
+.logo{
+  position: relative;
+  bottom: 1.5em;
+  left: 0.5em; 
+  width: 54.162px;
+  height: 59.475px;
+  flex-shrink: 0;
+  
+  /* increase size */
+}
+/*
+
+
+
+
+
+
+
+
+
+*/
+
 .prizesLabel{
   position: relative;
   display: block;
