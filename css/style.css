@@ -11,6 +11,11 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
+   @font-face {
+    font-family: 'worath';
+    src: url('../fonts/Worath.otf') format('opentype');
+}
+
 html {
   color: #222;
   font-size: 1em;
@@ -37,10 +42,9 @@ body{
 }
 
 .prizesLabel p{
-  font-family: Playfair Display;
+  font-family: worath;
   color:white;
   font-size: 26px;
-  font-weight: 600;
   line-height: 35px;
   letter-spacing: 0.05em;
   margin-top: 0;
@@ -55,7 +59,7 @@ body{
 }
 
 .debrisImage{
-  width: 40vw;
+  width: 35vw;
   height: auto;
   margin:0;
   margin-top: 3vh;
@@ -72,20 +76,25 @@ body{
   transform: translateX(-50%);
   width:80vw;
   height: auto;
-  border:1px solid #00FF57;
+  border:0px solid #00FF57;
   z-index: -1;
 }
 
 .prizePool{
+  padding-right: 0;
   position: absolute;
   font-family: Chakra Petch;
   left: 50%;
   transform: translateX(-50%);
 }
 
+.prizePool p{
+  margin: 0;
+}
+
 #currencyLabel{
   margin-top: 10vh;
-  font-size: 24px;
+  font-size: 7vw;
   font-weight: 500;
   line-height: 29px;
   letter-spacing: 0em;
@@ -95,7 +104,7 @@ body{
 
 #currencyValue{
   margin:0;
-  font-size: 72px;
+  font-size: 15vw;
   font-weight: 700;
   line-height: 86px;
   letter-spacing: 0em;
@@ -104,12 +113,13 @@ body{
 }
 
 #prizePoolLabel{
-  font-size: 32px;
+  font-size: 9vw;
   font-weight: 700;
   line-height: 38px;
   letter-spacing: 0em;
   text-align: left;
   color:white;
+  margin-bottom: 2vh;
 
 }
 
@@ -121,9 +131,51 @@ body{
   letter-spacing: 0em;
   text-align: left;
   color: #ffffff;
-
 }
 
+.conductedBy, .logos{
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  top:100vw;
+  z-index: 1;
+}
+
+.conductedByLabel img{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50vw;
+  height: auto;
+}
+
+#debris2{
+  width:30vw;
+  height: auto;
+  position: absolute;
+  margin-right: auto;
+  right: 70%;
+  z-index: -2;
+}
+
+.ieeelogos{
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  left: 50%;
+  transform: translateX(-50%);
+  top:10vh;
+}
+
+.vitlogo{
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  left: 50%;
+  transform: translateX(-50%);
+  top:20vh;
+}
 
 /*
  * Remove text-shadow in selection highlight:
