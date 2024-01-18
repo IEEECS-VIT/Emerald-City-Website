@@ -28,10 +28,80 @@ body{
   margin-right: auto;
 }
 
-.debrisImage{
-
-  margin-left:auto;
+.gridContainer{
+  display: block;
+  position: relative;
 }
+
+.debrisImage{
+  width: 40vw;
+  height: auto;
+  margin:0;
+  position: relative;
+  margin-left: auto;
+  float: right;
+  z-index: -2;
+}
+
+.boxVector{
+  margin-top: 5vh;
+  position:fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  width:80vw;
+  height: auto;
+  border:1px solid #00FF57;
+  z-index: -1;
+}
+
+.prizePool{
+  position: absolute;
+  font-family: Chakra Petch;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#currencyLabel{
+  margin-top: 10vh;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #00FF57;
+}
+
+#currencyValue{
+  margin:0;
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 86px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #00FF57;
+}
+
+#prizePoolLabel{
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38px;
+  letter-spacing: 0em;
+  text-align: left;
+  color:white;
+
+}
+
+#miscLabel{
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ffffff;
+
+}
+
 
 /*
  * Remove text-shadow in selection highlight:
