@@ -319,7 +319,7 @@ nav li:last-child {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  top:100vw;
+  top:50vh;
   z-index: 1;
 }
 
@@ -340,26 +340,38 @@ nav li:last-child {
   z-index: -2;
 }
 
-.ieeelogos{
-  position: absolute;
+.logos{
+
+  width: 100vw;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
   left: 50%;
   transform: translateX(-50%);
-  top:10vh;
 }
 
-.ieeelogos .debrisImage{
+.logos .debrisImage{
   display: none;
+}
+.ieeecslogo{
+  width: 50%;
+  height: auto;
 }
 
 .vitlogo{
+  margin-top: 2vh;
+}
+
+.FAQsection{
+  position: relative;
+  top:50vh;
+}
+
+#diamond-design{
+  width: 40vw;
+  height: auto;
   position: absolute;
-  display: flex;
-  flex-direction: row;
-  left: 50%;
-  transform: translateX(-50%);
-  top:20vh;
+  right: 50%;
 }
 
 }
@@ -423,19 +435,32 @@ nav li:last-child {
     display: flex;
     flex-direction: row;
     position: absolute;
-    margin-top: 40vh;
+    margin-top: 30vh;
     align-items: center;
     justify-content: space-evenly;
     width: 100vw;
   }
 
-  .ieeelogos{
-    display: flex;
-    flex-direction: row;
-    top:10vh;
+  .logos img{
+    width: 25vw;
   }
-  
-  .vitlogo{
+
+  .logos .debrisImage{
+    width: 20vw;
+    height: auto;
+
+  }
+
+  .FAQsection{
+    position: relative;
+    top:80vh;
+  }
+
+  #diamond-design{
+    width: 40vw;
+    height: auto;
+    position: absolute;
+    right: 0%;
   }
 
 
@@ -452,11 +477,7 @@ nav li:last-child {
 
 */
 
-.FAQsection{
-  position: relative;
-  top:70vh;
 
-}
 
 .background-image {
   position: fixed;
@@ -615,12 +636,7 @@ linear-gradient(0deg, rgba(176, 223, 183, 0.3), rgba(176, 223, 183, 0.3));
   margin-top: 10px;
 }
 
-#diamond-design{
-  width: 40vw;
-  height: auto;
-  position: absolute;
-  right: 50%;
-}
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
