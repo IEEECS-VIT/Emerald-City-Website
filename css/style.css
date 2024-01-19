@@ -147,7 +147,6 @@ nav li:last-child {
   width: 55%;
   height: 2.5em;
   opacity: 0.77;*/
-  font-size: large;
 
   position: relative;
   top: 2.5em;
@@ -156,6 +155,11 @@ nav li:last-child {
   align-items: center;
 }
 
+.reg img{
+  width : 33%;
+  height:  auto;
+  margin-top: 3vw;
+}
 
 /* .frontp{
   color: #118223;
