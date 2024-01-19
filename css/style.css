@@ -204,13 +204,8 @@ nav li:last-child {
 
 
 
-
-
-
-
-
-
 */
+@media only screen and (max-width:768px){
 
 .prizesLabel{
   position: relative;
@@ -354,6 +349,10 @@ nav li:last-child {
   top:10vh;
 }
 
+.ieeelogos .debrisImage{
+  display: none;
+}
+
 .vitlogo{
   position: absolute;
   display: flex;
@@ -361,6 +360,85 @@ nav li:last-child {
   left: 50%;
   transform: translateX(-50%);
   top:20vh;
+}
+
+}
+
+@media only screen and (min-width:768px){
+  .prizesLabel{
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .prizesLabel img{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20vw;
+    height: auto;
+  }
+
+  .prizesLabel p{
+    font-family: worath;
+    color:white;
+    font-size: 3vw;
+    line-height: 35px;
+    letter-spacing: 0.05em;
+    margin-top: 1vh;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,15%);
+  }
+
+  .gridContainer .debrisImage{
+    display: none;
+  }
+
+  .prizePool{
+    display: none;
+  }
+
+  #debris2{ 
+    display: none;
+  }
+  .conductedBy, .logos{
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+  }
+
+  .conductedByLabel img{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20vw;
+    height: auto;
+  }
+
+  .logos{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    margin-top: 40vh;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100vw;
+  }
+
+  .ieeelogos{
+    display: flex;
+    flex-direction: row;
+    top:10vh;
+  }
+  
+  .vitlogo{
+  }
+
+
 }
 
 
@@ -402,7 +480,10 @@ nav li:last-child {
 
 
 .faq{
-
+  width: 70vw;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
   justify-items: center;
   text-align: center;
 }
