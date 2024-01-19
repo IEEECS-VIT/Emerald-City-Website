@@ -30,6 +30,7 @@ body{
   display: flex;
   flex-direction: column;
   background-image: url('../img/background.svg');
+  overflow-x: hidden;
 }
 
 nav {
@@ -65,37 +66,46 @@ nav a:hover {
 nav li:last-child {
   margin-left: auto;
 }
-/* 
-.logo {
-  width: 100%;
-  height: ;
-} */
+
+ 
 
 .sidebar {
-  /* color: white; */
   width: 100%;
-  position: relative;
+  position: fixed;
   top: 0;
-  right: 0;
-  font-family:Chakra Petch;
+  right: -100%;
+  font-family: Chakra Petch;
   height: 100vh;
-  width: 100vw;
   z-index: 999;
   background-image: url("../img/background.svg");
-  display: none;
+  display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-evenly; 
+  transition: right 0.3s ease;
 }
-.sidebar li {
-  width: 100%;
-}
-.sidebar a {
-  width: 100%;
-}
+
 .sidebar li:first-child {
+  margin-left: auto;
+}
+.sidebar li:last-child {
+  margin-left: auto;
   margin-right: auto;
 }
+
+
+.sidebar.open {
+  right: 0;
+}
+
+.sidebar a {
+  width: 100%;
+  text-align: center; 
+}
+
+
+
+
 .menu-button{
   display: none;
 }
