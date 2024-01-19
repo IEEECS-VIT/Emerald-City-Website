@@ -25,22 +25,13 @@ function toggleAnswer(element) {
   });
 
 
-  document.getElementById('toggleLink').addEventListener('click', function() {
+document.getElementById('toggleLink').addEventListener('click', function() {
     var sidebar = document.querySelector('.sidebar'); 
-
-    if (sidebar.style.display === 'none' || sidebar.style.display === '') {
-        sidebar.style.display = 'flex';
-    } else {
-        sidebar.style.display = 'none';
-    }
-});
-
-document.getElementById('toggle2').addEventListener('click', function() {
-    var sidebar = document.querySelector('.sidebar'); // Assuming your sidebar has the class 'sidebar'
-
-    if (sidebar.style.display === 'none' || sidebar.style.display === '') {
-        sidebar.style.display = 'flex';
-    } else {
-        sidebar.style.display = 'none';
-    }
-});
+    sidebar.classList.toggle('open');
+  });
+  
+  document.getElementById('toggle2').addEventListener('click', function() {
+    var sidebar = document.querySelector('.sidebar');
+    sidebar.classList.toggle('open');
+  });
+  
