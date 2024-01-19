@@ -67,7 +67,7 @@ nav li:last-child {
   margin-left: auto;
 }
 
- 
+
 
 .sidebar {
   width: 100%;
@@ -81,7 +81,7 @@ nav li:last-child {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly; 
+  justify-content: space-evenly;
   transition: right 0.3s ease;
 }
 
@@ -100,7 +100,7 @@ nav li:last-child {
 
 .sidebar a {
   width: 100%;
-  text-align: center; 
+  text-align: center;
 }
 
 
@@ -148,30 +148,31 @@ nav li:last-child {
   height: 2.5em;
   opacity: 0.77;*/
   font-size: large;
-  
+
   position: relative;
   top: 2.5em;
   display: flex;
   justify-content: center;
-  align-items: center; 
-} 
+  align-items: center;
+}
 
 
 /* .frontp{
   color: #118223;
-  font-family: Worath; 
+  font-family: Worath;
   font-size: 25px;
   font-weight: 20 ;
   line-height: 22px;
   letter-spacing: 0em;
-  text-align: left;   
+  text-align: left;
 } */
 
 .about{
   color: #118223;
-  font-family: worath; 
+  font-family: worath;
   font-size: 20px;
- 
+  margin-top: 2vw;
+  margin-bottom: 5vw;
   line-height: 22px;
   letter-spacing: 0em;
   position: relative;
@@ -184,14 +185,14 @@ nav li:last-child {
   position: relative;
   top: 4em;
   left: 0.4em;
-  
+
 }
 
 .img3{
   position: relative;
   right: 35%;
   top: 1.5em;
-  
+
 }
 
 .img2{
@@ -203,11 +204,11 @@ nav li:last-child {
 .logo{
   position: relative;
   bottom: 1.5em;
-  left: 0.5em; 
+  left: 0.5em;
   width: 54.162px;
   height: 59.475px;
   flex-shrink: 0;
-  
+
   /* increase size */
 }
 /*
@@ -399,6 +400,9 @@ nav li:last-child {
     left: 50%;
     transform: translateX(-50%);
     width: 20vw;
+
+    margin-top: 2vw;
+    margin-bottom: 2vw;
     height: auto;
   }
 
@@ -411,6 +415,9 @@ nav li:last-child {
     margin-top: 1vh;
     position: absolute;
     left: 50%;
+
+    margin-top: 2vw;
+    margin-bottom: 2vw;
     transform: translate(-50%,15%);
   }
 
@@ -422,7 +429,7 @@ nav li:last-child {
     display: none;
   }
 
-  #debris2{ 
+  #debris2{
     display: none;
   }
   .conductedBy, .logos{
@@ -438,6 +445,9 @@ nav li:last-child {
     left: 50%;
     transform: translateX(-50%);
     width: 20vw;
+
+    margin-top: 3vw;
+    margin-bottom: 3vw;
     height: auto;
   }
 
