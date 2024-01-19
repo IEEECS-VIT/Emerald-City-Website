@@ -64,7 +64,7 @@ nav a:hover {
 nav li:first-child {
   margin-right: auto;
 }
-/* 
+/*
 .logo {
   width: 100%;
   height: ;
@@ -137,30 +137,30 @@ nav li:first-child {
   height: 2.5em;
   opacity: 0.77;*/
   font-size: large;
-  
+
   position: relative;
   top: 2.5em;
   display: flex;
   justify-content: center;
-  align-items: center; 
-} 
+  align-items: center;
+}
 
 
 /* .frontp{
   color: #118223;
-  font-family: Worath; 
+  font-family: Worath;
   font-size: 25px;
   font-weight: 20 ;
   line-height: 22px;
   letter-spacing: 0em;
-  text-align: left;   
+  text-align: left;
 } */
 
 .about{
   color: #118223;
-  font-family: worath; 
+  font-family: worath;
   font-size: 20px;
- 
+
   line-height: 22px;
   letter-spacing: 0em;
   position: relative;
@@ -173,14 +173,14 @@ nav li:first-child {
   position: relative;
   top: 4em;
   left: 0.4em;
-  
+
 }
 
 .img3{
   position: relative;
   right: 35%;
   top: 1.5em;
-  
+
 }
 
 .img2{
@@ -192,11 +192,11 @@ nav li:first-child {
 .logo{
   position: relative;
   bottom: 1.5em;
-  left: 0.5em; 
+  left: 0.5em;
   width: 54.162px;
   height: 59.475px;
   flex-shrink: 0;
-  
+
   /* increase size */
 }
 /*
@@ -366,91 +366,84 @@ nav li:first-child {
 /*
 
 
-
+FAQ CSS
 
 
 
 
 */
-
 .FAQsection{
   position: relative;
-  top:70vh;
-
+  top: 70vh;
 }
 
 .background-image {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
   z-index: -1;
 }
 
-#background1 {
-  background-image: url('../img/background.svg');
-}
-
+#background1,
 #background2 {
   background-image: url('../img/background.svg');
 }
 
-
-
-.faq{
-
+.faq {
   justify-items: center;
   text-align: center;
 }
 
 .faq-item {
   margin: auto;
-  padding: 10px;
-  border-radius: 5px;
+  padding: 1.38889vw; /* 10px */
+  border-radius: 1.04167vw; /* 5px */
   overflow: hidden;
 }
-.faq-title{
+
+.faq-title {
   font-family: Playfair Display;
-font-size: 36px;
-font-weight: 600;
-line-height: 48px;
-letter-spacing: 0.05em;
-text-align: left;
-background: #06BD2E73;
-
+  font-size: 2.5vw; /* 36px */
+  font-weight: 600;
+  line-height: 3.33333vw; /* 48px */
+  letter-spacing: 0.05em;
+  text-align: left;
+  background: #06BD2E73;
 }
-.question {
-  /* background-color: lightgreen; */
-  position: relative;
-  padding: 9px;
-  display: flex;
-  color : white;
-  background: linear-gradient(0deg, rgba(17, 227, 50, 0.15), rgba(17, 227, 50, 0.15)),
-linear-gradient(0deg, rgba(176, 223, 183, 0.3), rgba(176, 223, 183, 0.3));
 
+.question {
+  position: relative;
+  padding: 0.625vw; /* 9px */
+  display: flex;
+  color: white;
+  background: linear-gradient(0deg, rgba(17, 227, 50, 0.15), rgba(17, 227, 50, 0.15)),
+    linear-gradient(0deg, rgba(176, 223, 183, 0.3), rgba(176, 223, 183, 0.3));
   justify-content: space-between;
   align-items: center;
-  border: 3px solid #11E33226;
+  border: 0.625vw solid #11E33226; /* 3px */
   font-weight: bold;
   z-index: 1;
 }
-.arrow-icon{
-  width: 20px;
-  height: 20px;
+
+.arrow-icon {
+  width: 1.38889vw; /* 20px */
+  height: 1.38889vw; /* 20px */
 }
+
 .drawing {
   width: 100%;
-  height: 300px;
-
+  height: 16.66667vw; /* 300px */
 }
+
 .contact-us {
   font-family: 'Playfair Display', sans-serif;
-  font-size: 18px;
+  font-size: 1.25vw; /* 18px */
   font-weight: 700;
-  line-height: 50px;
+  line-height: 2.77778vw; /* 50px */
   letter-spacing: 0em;
   text-align: center;
   background: linear-gradient(90deg, #03FF58 0%, #53CA7C 31.42%, #149B42 62.74%, #93F2B3 103.03%, #09A73F 103.03%);
@@ -458,7 +451,8 @@ linear-gradient(0deg, rgba(176, 223, 183, 0.3), rgba(176, 223, 183, 0.3));
   background-clip: text;
   color: transparent;
 }
-.icons{
+
+.icons {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -474,11 +468,10 @@ linear-gradient(0deg, rgba(176, 223, 183, 0.3), rgba(176, 223, 183, 0.3));
   position: relative;
   opacity: 0.65;
   background: #40C555A6;
-
   color: black;
-  padding: 10px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+  padding: 1.38889vw; /* 10px */
+  border-bottom-left-radius: 1.04167vw; /* 5px */
+  border-bottom-right-radius: 1.04167vw; /* 5px */
   width: 100%;
   box-sizing: border-box;
   z-index: 0;
@@ -486,36 +479,35 @@ linear-gradient(0deg, rgba(176, 223, 183, 0.3), rgba(176, 223, 183, 0.3));
 
 @keyframes fadeInDown {
   from {
-      transform: translateY(-30px);
+    transform: translateY(-1.04167vw); /* -30px */
   }
   to {
-      transform: translateY(0);
+    transform: translateY(0);
   }
 }
+
 @keyframes fadeOutUp {
   from {
-      transform: translateY(0);
+    transform: translateY(0);
   }
   to {
-      transform: translateY(-30px);
+    transform: translateY(-1.04167vw); /* -30px */
   }
 }
 
-
-
 .contact-section {
-  width: 150px;
-  height: 33px;
+  width: 8.33333vw; /* 150px */
+  height: 4.86111vw; /* 33px */
   position: relative;
-  top: 32px;
-  left: 88px;
+  top: 2.22222vw; /* 32px */
+  left: 4.44444vw; /* 88px */
   font-family: 'Worath', sans-serif;
   font-weight: 400;
 }
 
 .contact-section h2 {
-  font-size: 34px;
-  line-height: 33.08px;
+  font-size: 4.86111vw; /* 34px */
+  line-height: 4.86111vw; /* 33.08px */
   text-align: center;
   background: linear-gradient(#11E332, #35FF55, #4CDA62, #6AD07A, #40C555, #00FF29);
   -webkit-background-clip: text;
@@ -527,18 +519,19 @@ linear-gradient(0deg, rgba(176, 223, 183, 0.3), rgba(176, 223, 183, 0.3));
   background: linear-gradient(#11E332, #35FF55, #4CDA62, #6AD07A, #40C555, #00FF29);
   color: white;
   border: none;
-  padding: 10px;
+  padding: 1.38889vw; /* 10px */
   cursor: pointer;
-  border-radius: 5px;
-  margin-top: 10px;
+  border-radius: 1.04167vw; /* 5px */
+  margin-top: 1.38889vw; /* 10px */
 }
 
-#diamond-design{
+#diamond-design {
   width: 40vw;
   height: auto;
   position: absolute;
   right: 50%;
 }
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
