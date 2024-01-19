@@ -428,11 +428,16 @@ FAQ CSS
   font-weight: bold;
   z-index: 1;
 }
-
 .arrow-icon {
   width: 1.38889vw; /* 20px */
   height: 1.38889vw; /* 20px */
+  transition: transform 0.5s ease-out;
 }
+
+.question.open .arrow-icon {
+  transform: rotate(180deg); 
+}
+
 
 .drawing {
   width: 100%;
