@@ -435,7 +435,7 @@ FAQ CSS
 }
 
 .question.open .arrow-icon {
-  transform: rotate(180deg); 
+  transform: rotate(180deg);
 }
 
 
@@ -454,9 +454,16 @@ FAQ CSS
   background: linear-gradient(90deg, #03FF58 0%, #53CA7C 31.42%, #149B42 62.74%, #93F2B3 103.03%, #09A73F 103.03%);
   -webkit-background-clip: text;
   background-clip: text;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly ;
   color: transparent;
 }
-
+.contact-text{
+  margin-top: 3vh;
+  margin-bottom: 5vh;
+  font-size:7vw;
+}
 .icons {
   display: flex;
   justify-content: space-evenly;
@@ -471,7 +478,6 @@ FAQ CSS
 .answer {
   display: none;
   position: relative;
-  opacity: 0.65;
   background: #40C555A6;
   color: black;
   padding: 1.38889vw; /* 10px */
@@ -484,20 +490,34 @@ FAQ CSS
 
 @keyframes fadeInDown {
   from {
-    transform: translateY(-1.04167vw); /* -30px */
+      transform: translateY(-1.04167vw); /* -30px */
+      opacity: 0;
   }
   to {
-    transform: translateY(0);
+      transform: translateY(0);
+      opacity: 1;
   }
 }
 
 @keyframes fadeOutUp {
   from {
-    transform: translateY(0);
+      transform: translateY(0);
+      opacity: 1;
   }
   to {
-    transform: translateY(-1.04167vw); /* -30px */
+      transform: translateY(-1.04167vw); /* -30px */
+      opacity: 0;
   }
+}
+
+.answer.open {
+  display: block;
+  animation: fadeInDown 0.5s ease-out;
+}
+
+.answer.closed {
+  display: none;
+  animation: fadeOutUp 0.5s ease-out;
 }
 
 .contact-section {
@@ -509,6 +529,8 @@ FAQ CSS
   font-family: 'Worath', sans-serif;
   font-weight: 400;
 }
+
+
 
 .contact-section h2 {
   font-size: 4.86111vw; /* 34px */
