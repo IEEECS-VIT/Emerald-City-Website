@@ -532,7 +532,17 @@ nav li:last-child {
   justify-items: center;
   text-align: center;
 }
+.faq img{
+  width: 30%;
+  height: auto;
+}
+@media only screen and (max-width:768px){
 
+  .faq img{
+    width: 50%;
+    height:auto;
+  }
+}
 .faq-item {
   margin: auto;
   padding: 10px;
@@ -575,7 +585,7 @@ linear-gradient(0deg, rgba(176, 223, 183, 0.3), rgba(176, 223, 183, 0.3));
 }
 .contact-us {
   font-family: 'Playfair Display', sans-serif;
-  font-size: 18px;
+  font-size: 2.25em;
   font-weight: 700;
   line-height: 50px;
   letter-spacing: 0em;
@@ -583,12 +593,17 @@ linear-gradient(0deg, rgba(176, 223, 183, 0.3), rgba(176, 223, 183, 0.3));
   background: linear-gradient(90deg, #03FF58 0%, #53CA7C 31.42%, #149B42 62.74%, #93F2B3 103.03%, #09A73F 103.03%);
   -webkit-background-clip: text;
   background-clip: text;
+  margin-top: 12vh;
   color: transparent;
 }
 .icons{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
+}
+
+.icons img{
+  padding: 2vw;
 }
 
 .drawing img {
