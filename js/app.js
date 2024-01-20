@@ -30,21 +30,20 @@ document.getElementById('toggleLink').addEventListener('click', function() {
     sidebar.classList.toggle('open');
   });
 
-// Get the sidebar element
+  document.getElementById('toggle2').addEventListener('click', function() {
+    var sidebar = document.querySelector('.sidebar');
+    sidebar.classList.toggle('open');
+  });
+
+
 var sidebar = document.querySelector('.sidebar');
-
-// Get all the navigation links inside the sidebar
 var navLinks = document.querySelectorAll('.sidebar a');
-
-// Add a click event listener to each navigation link
 navLinks.forEach(function(link) {
   link.addEventListener('click', function() {
-    // Close the sidebar by removing the 'open' class
     sidebar.classList.remove('open');
   });
 });
 
-// Add an event listener to the toggle button to open/close the sidebar
 document.getElementById('toggle2').addEventListener('click', function() {
   sidebar.classList.toggle('open');
 });
