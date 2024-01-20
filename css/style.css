@@ -27,6 +27,7 @@ html {
 }
 
 body{
+  color : black;
   display: flex;
   height: 100vh;
   flex-direction: column;
@@ -77,7 +78,7 @@ nav li:last-child {
 
 .sidebar {
   width: 100%;
-  
+
   position: fixed;
   top: 0;
   right: -100%;

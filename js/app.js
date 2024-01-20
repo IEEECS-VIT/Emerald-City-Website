@@ -64,6 +64,7 @@ document.getElementById('toggleLink').addEventListener('click', function() {
   document.getElementById('toggle2').addEventListener('click', function() {
     var sidebar = document.querySelector('.sidebar');
     sidebar.classList.toggle('open');
+
     document.body.style.overflow = '';
   });
 
@@ -73,6 +74,8 @@ var navLinks = document.querySelectorAll('.sidebar a');
 navLinks.forEach(function(link) {
   link.addEventListener('click', function() {
     sidebar.classList.remove('open');
+
+    document.body.style.overflow = '';
   });
 });
 
