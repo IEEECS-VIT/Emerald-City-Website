@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.mainContainer{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+}
+
+.sideBar{
+    width: 35vw;
+    height: auto;
+    background: url("../img/register/aurabg.svg");
+    background-position: center;
+}
+
+.rightBar{
+    width: 65vw;
+    height: auto;
+    background: url("../img/register/formbg.svg");
+    background-position: center;
+}
+
+.emeraldCityLogo img{
+    height:20vh;
+    width: auto;
+}
+
+.quote{
+    margin-left: 1vw;
+    color: white;
+    position: absolute;
+    width: 35vw;
+    word-wrap: break-word;
+    top:40%;
+
+}
+
+#doubleQuote{
+    font-family: Gayathri;
+    font-size: 10vh;
+    font-weight: 700;
+    letter-spacing: 0em;
+    text-align: left;
+    height: 1.5vh;
+}
+
+.quoteText{
+    font-family: Chakra Petch;
+    font-weight: 500;
+    font-size: 1.5vw;
+    letter-spacing: 0em;
+    text-align: left;
+    text-wrap: nowrap;
+}
+
+#postQuote, .quoteText{
+    text-indent: 2vw;
+}
+
+#postQuote{
+    margin-top: 4vh;
+    font-family: Playfair Display;
+    font-weight: 700;
+    font-size: 2vw;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.rightBar{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.backButton{
+
+    color:white;
+    position: absolute;
+    font-family: Playfair Display;
+    font-size: 3vh;
+    font-weight: 500;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.formContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5vh;
+    width: 100%;
+}
+
+.heading{
+    color: white;
+    font-family: Playfair Display;
+    font-size: 5vh;
+    font-weight: 700;
+    line-height: 51px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.bu
+
+.mainContainer div{
+    border: 1px orange solid;
+}
+
