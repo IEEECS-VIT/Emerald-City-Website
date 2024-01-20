@@ -57,11 +57,14 @@ function toggleAnswer(element) {
 document.getElementById('toggleLink').addEventListener('click', function() {
     var sidebar = document.querySelector('.sidebar');
     sidebar.classList.toggle('open');
+    document.body.style.overflow = 'hidden';
+
   });
 
   document.getElementById('toggle2').addEventListener('click', function() {
     var sidebar = document.querySelector('.sidebar');
     sidebar.classList.toggle('open');
+    document.body.style.overflow = '';
   });
 
 
