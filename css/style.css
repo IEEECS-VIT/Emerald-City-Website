@@ -11,11 +11,641 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
+   @font-face {
+    font-family: 'worath';
+    src: url('../fonts/Worath.otf') format('opentype');
+}
+*{
+  padding: 0;
+  margin: 0;
+}
+
 html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
 }
+
+body{
+  display: flex;
+  flex-direction: column;
+  background-image: url('../img/background.svg');
+  overflow-x: hidden;
+}
+
+nav {
+  font-size: 1.5rem;
+}
+nav ul{
+  width: 100vw;
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: worath;
+}
+
+/* nav li{
+  margin-top: 1rem;
+} */
+
+nav a{
+  height: 100%;
+  padding: 0 2rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  text-decoration-color: green;
+  text-underline-offset: 0.5rem;
+}
+nav li:last-child {
+  margin-left: auto;
+}
+
+ 
+
+.sidebar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  font-family: Chakra Petch;
+  height: 100vh;
+  z-index: 999;
+  background-image: url("../img/background.svg");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly; 
+  transition: right 0.3s ease;
+}
+
+.sidebar li:first-child {
+  margin-left: auto;
+}
+.sidebar li:last-child {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.sidebar.open {
+  right: 0;
+}
+
+.sidebar a {
+  width: 100%;
+  text-align: center; 
+}
+
+
+
+
+.menu-button{
+  display: none;
+}
+
+@media(max-width: 800px){
+  .hideOnMobile{
+    display: none;
+  }
+  .menu-button{
+    display: block;
+  }
+}
+
+@media(max-width: 400px){
+  .sidebar{
+    width: 100%;
+  }
+}
+
+.titlesection{
+  margin-bottom: 1vh;
+}
+
+.img1{
+  position: relative;
+  left: 87%;
+  top: 2em;
+}
+.head{
+  position: relative;
+  top: 1.5em;
+
+}
+
+.reg{
+  /* background-color: #118223;
+  color: #ffffff;
+  border-radius: 10px;
+  width: 55%;
+  height: 2.5em;
+  opacity: 0.77;*/
+  font-size: large;
+  
+  position: relative;
+  top: 2.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+} 
+
+
+/* .frontp{
+  color: #118223;
+  font-family: Worath; 
+  font-size: 25px;
+  font-weight: 20 ;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;   
+} */
+
+.about{
+  color: #118223;
+  font-family: worath; 
+  font-size: 20px;
+ 
+  line-height: 22px;
+  letter-spacing: 0em;
+  position: relative;
+  top: 3.9em;
+  /* text-align: left; */
+}
+
+.info{
+  color: white;
+  position: relative;
+  top: 4em;
+  left: 0.4em;
+  
+}
+
+.img3{
+  position: relative;
+  right: 35%;
+  top: 1.5em;
+  
+}
+
+.img2{
+  position: relative;
+  top: 6em;
+/* very small diamond */
+}
+
+.logo{
+  position: relative;
+  bottom: 1.5em;
+  left: 0.5em; 
+  width: 54.162px;
+  height: 59.475px;
+  flex-shrink: 0;
+  
+  /* increase size */
+}
+/*
+
+
+
+*/
+@media only screen and (max-width:768px){
+
+.prizesLabel{
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.prizesLabel img{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50vw;
+  height: auto;
+}
+
+.prizesLabel p{
+  font-family: worath;
+  color:white;
+  font-size: 26px;
+  line-height: 35px;
+  letter-spacing: 0.05em;
+  margin-top: 0;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,15%);
+}
+
+.gridContainer{
+  display: block;
+  position: relative;
+}
+
+.debrisImage{
+  width: 35vw;
+  height: auto;
+  margin:0;
+  margin-top: 3vh;
+  position: relative;
+  margin-left: auto;
+  float: right;
+  z-index: -2;
+}
+
+.boxVector{
+  margin-top: 5vh;
+  position:fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  width:80vw;
+  height: auto;
+  border:0px solid #00FF57;
+  z-index: -1;
+}
+
+.prizePool{
+  padding-right: 0;
+  position: absolute;
+  font-family: Chakra Petch;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.prizePool p{
+  margin: 0;
+}
+
+#currencyLabel{
+  margin-top: 10vh;
+  font-size: 7vw;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #00FF57;
+}
+
+#currencyValue{
+  margin:0;
+  font-size: 15vw;
+  font-weight: 700;
+  line-height: 86px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #00FF57;
+}
+
+#prizePoolLabel{
+  font-size: 9vw;
+  font-weight: 700;
+  line-height: 38px;
+  letter-spacing: 0em;
+  text-align: left;
+  color:white;
+  margin-bottom: 2vh;
+
+}
+
+#miscLabel{
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ffffff;
+}
+
+.conductedBy, .logos{
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  top:50vh;
+  z-index: 1;
+}
+
+.conductedByLabel img{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50vw;
+  height: auto;
+}
+
+#debris2{
+  width:30vw;
+  height: auto;
+  position: absolute;
+  margin-right: auto;
+  right: 70%;
+  z-index: -2;
+}
+
+.logos{
+
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.logos .debrisImage{
+  display: none;
+}
+.ieeecslogo{
+  width: 50%;
+  height: auto;
+}
+
+.vitlogo{
+  margin-top: 2vh;
+}
+
+.FAQsection{
+  position: relative;
+  top:50vh;
+}
+
+#diamond-design{
+  width: 40vw;
+  height: auto;
+  position: absolute;
+  right: 50%;
+}
+
+}
+
+@media only screen and (min-width:768px){
+  .prizesLabel{
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .prizesLabel img{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20vw;
+    height: auto;
+  }
+
+  .prizesLabel p{
+    font-family: worath;
+    color:white;
+    font-size: 3vw;
+    line-height: 35px;
+    letter-spacing: 0.05em;
+    margin-top: 1vh;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,15%);
+  }
+
+  .gridContainer .debrisImage{
+    display: none;
+  }
+
+  .prizePool{
+    display: none;
+  }
+
+  #debris2{ 
+    display: none;
+  }
+  .conductedBy, .logos{
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+  }
+
+  .conductedByLabel img{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20vw;
+    height: auto;
+  }
+
+  .logos{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    margin-top: 30vh;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100vw;
+  }
+
+  .logos img{
+    width: 25vw;
+  }
+
+  .logos .debrisImage{
+    width: 20vw;
+    height: auto;
+
+  }
+
+  .FAQsection{
+    position: relative;
+    top:80vh;
+  }
+
+  #diamond-design{
+    width: 40vw;
+    height: auto;
+    position: absolute;
+    right: 0%;
+  }
+
+
+}
+
+
+/*
+
+
+
+
+
+
+
+*/
+
+
+
+.background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+#background1 {
+  background-image: url('../img/background.svg');
+}
+
+#background2 {
+  background-image: url('../img/background.svg');
+}
+
+
+
+.faq{
+  width: 70vw;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  justify-items: center;
+  text-align: center;
+}
+
+.faq-item {
+  margin: auto;
+  padding: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.faq-title{
+  font-family: Playfair Display;
+font-size: 36px;
+font-weight: 600;
+line-height: 48px;
+letter-spacing: 0.05em;
+text-align: left;
+background: #06BD2E73;
+
+}
+.question {
+  /* background-color: lightgreen; */
+  position: relative;
+  padding: 9px;
+  display: flex;
+  color : white;
+  background: linear-gradient(0deg, rgba(17, 227, 50, 0.15), rgba(17, 227, 50, 0.15)),
+linear-gradient(0deg, rgba(176, 223, 183, 0.3), rgba(176, 223, 183, 0.3));
+
+  justify-content: space-between;
+  align-items: center;
+  border: 3px solid #11E33226;
+  font-weight: bold;
+  z-index: 1;
+}
+.arrow-icon{
+  width: 20px;
+  height: 20px;
+}
+.drawing {
+  width: 100%;
+  height: 300px;
+
+}
+.contact-us {
+  font-family: 'Playfair Display', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: 0em;
+  text-align: center;
+  background: linear-gradient(90deg, #03FF58 0%, #53CA7C 31.42%, #149B42 62.74%, #93F2B3 103.03%, #09A73F 103.03%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.icons{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.drawing img {
+  max-width: 100%;
+  height: auto;
+}
+
+.answer {
+  display: none;
+  position: relative;
+  opacity: 0.65;
+  background: #40C555A6;
+
+  color: black;
+  padding: 10px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 0;
+}
+
+@keyframes fadeInDown {
+  from {
+      transform: translateY(-30px);
+  }
+  to {
+      transform: translateY(0);
+  }
+}
+@keyframes fadeOutUp {
+  from {
+      transform: translateY(0);
+  }
+  to {
+      transform: translateY(-30px);
+  }
+}
+
+
+
+.contact-section {
+  width: 150px;
+  height: 33px;
+  position: relative;
+  top: 32px;
+  left: 88px;
+  font-family: 'Worath', sans-serif;
+  font-weight: 400;
+}
+
+.contact-section h2 {
+  font-size: 34px;
+  line-height: 33.08px;
+  text-align: center;
+  background: linear-gradient(#11E332, #35FF55, #4CDA62, #6AD07A, #40C555, #00FF29);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.contact-btn {
+  background: linear-gradient(#11E332, #35FF55, #4CDA62, #6AD07A, #40C555, #00FF29);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
 
 /*
  * Remove text-shadow in selection highlight:

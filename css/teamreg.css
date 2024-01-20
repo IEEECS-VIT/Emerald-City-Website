@@ -1,0 +1,223 @@
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('PlayfairDisplay-VariableFont_wght.ttf') format('TrueType');
+}
+@font-face {
+    font-family: 'Chakra Petch';
+    src: url('ChakraPetch-Regular.ttf') format('TrueType');
+}
+
+
+
+body{
+    background-image: url(../img/background.svg);
+}
+
+.tophead{
+    color: white;
+    font-family: Playfair Display;
+    position: relative;
+    top: 2.5vh;
+    font-family: playfair;
+
+}
+
+.belowhead{
+    font-family: Playfair Display;
+    color: white;
+    position: relative;
+    top: 1vh;
+    left: 0.5vh;
+    font-family: playfair;
+}
+
+.buttonss{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 2vh;
+}
+
+.name{
+    color: #11e332;
+    display: flex;
+    flex-shrink: 0;
+    font-family: Playfair Display, 'Source Sans Pro';
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.3325;
+    position: relative;
+    left: 9vh;
+    
+  }
+  
+
+.email{
+    color: #11E332;
+    display: flex;
+    flex-shrink: 0;
+    font-family: Playfair Display, 'Source Sans Pro';
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.3325;
+    position: relative;
+    left: 9vh;
+    top: 3vh;
+}
+
+.regno{
+    color: #11E332;
+    display: flex;
+    flex-shrink: 0;
+    font-family: Playfair Display, 'Source Sans Pro';
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.3325;
+    position: relative;
+    left: 9vh;
+    top: 3vh;
+}
+
+.phno{
+    color: #11E332;
+    display: flex;
+    flex-shrink: 0;
+    font-family: Playfair Display, 'Source Sans Pro';
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.3325;
+    position: relative;
+    left: 9vh;
+    top: 3vh;
+}
+
+.refcode{
+    color: #11E332;
+    display: flex;
+    flex-shrink: 0;
+    font-family: Playfair Display, 'Source Sans Pro';
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.3325;
+    position: relative;
+    left: 9vh;
+    top: 3vh;
+}
+
+.bar1{
+    backdrop-filter: blur(0.5rem);
+    background-color: rgba(17, 227, 50, 0.150000006);
+    border-radius: 0.6rem;
+    box-sizing: border-box;
+    color: #fcf5f5;
+    display: flex;
+    flex-shrink: 0;
+    font-family: Chakra Petch, 'Source Sans Pro';
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.3;
+    margin: 0rem 2.8rem 0.75rem 4.3rem;
+    padding: 0.8rem 0.7rem 0.7rem 0.7rem;
+    white-space: nowrap;
+    width: calc(100% - 7.1001rem);
+  }
+
+  .bar2{
+    backdrop-filter: blur(0.2rem);
+    background-color: rgba(17, 227, 50, 0.150000006);
+    border-radius: 0.6rem;
+    box-sizing: border-box;
+    color: #fdfeff;
+    display: flex;
+    flex-shrink: 0;
+    font-family: Chakra Petch, 'Source Sans Pro';
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.3;
+    margin: 0rem 2.8rem 0.75rem 4.3rem;
+    padding: 0.75rem 0.7rem;
+    white-space: nowrap;
+    width: calc(100% - 7.1001rem);
+  }
+
+  .bar3{
+    backdrop-filter: blur(0.2rem);
+    background-color: rgba(17, 227, 50, 0.150000006);
+    border-radius: 0.6rem;
+    box-sizing: border-box;
+    color: #fdfeff;
+    display: flex;
+    flex-shrink: 0;
+    font-family: Chakra Petch, 'Source Sans Pro';
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.3;
+    margin: 0rem 2.8rem 0.75rem 4.3rem;
+    padding: 0.65rem 0.7rem 0.85rem 0.7rem;
+    white-space: nowrap;
+    width: calc(100% - 7.1001rem);
+  }
+
+
+  .bar4{
+    backdrop-filter: blur(0.2rem);
+    background-color: rgba(17, 227, 50, 0.150000006);
+    border-radius: 0.6rem;
+    box-sizing: border-box;
+    color: #fdfeff;
+    display: flex;
+    flex-shrink: 0;
+    font-family: Chakra Petch, 'Source Sans Pro';
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.3;
+    margin: 0rem 2.8rem 0.75rem 4.3rem;
+    padding: 0.65rem 0.7rem 0.85rem 0.7rem;
+    white-space: nowrap;
+    width: calc(100% - 7.1001rem);
+  }
+
+  .bar5{
+    backdrop-filter: blur(0.2rem);
+    background-color: rgba(17, 227, 50, 0.150000006);
+    border-radius: 0.6rem;
+    box-sizing: border-box;
+    color: #fdfeff;
+    display: flex;
+    flex-shrink: 0;
+    font-family: Chakra Petch, 'Source Sans Pro';
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.3;
+    margin: 0rem 2.8rem 4rem 4.3rem;
+    padding: 0.65rem 0.7rem 0.85rem 0.7rem;
+    white-space: nowrap;
+    width: calc(100% - 7.1001rem);
+  }
+
+  .footer-button{
+    align-items: center;
+    background-color: rgba(16, 226, 50, 0.75);
+    color: #000917;
+    display: flex;
+    flex-shrink: 0;
+    font-family: Chakra Petch, 'Source Sans Pro';
+    font-size: 1.6rem;
+    font-weight: 600;
+    height: 3.5rem;
+    justify-content: center;
+    line-height: 1.3;
+    margin: 0rem 8.5rem 0rem 10rem;
+    white-space: nowrap;
+    width: 23vh;
+    position: relative;
+    right: 8vh;
+
+    
+  }
+
+.line{
+    position: relative;
+    left: 2vh;
+}
