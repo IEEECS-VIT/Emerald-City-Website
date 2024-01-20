@@ -18,7 +18,10 @@
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600&family=Gayathri:wght@700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">        <link href="../css/registerstyles.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600&family=Gayathri:wght@700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">        
+        <link href="../css/registerstyles.css" rel="stylesheet">
+
+        <script src="../js/register.js" defer></script>
     </head>
     <body>
         <div class="mainContainer">
@@ -54,10 +57,10 @@
                     </div>
                     <div class="buttons">
                         <div class="leader">
-                            <img src="../img/register/teamleaderactive.svg">
+                            <img id="leaderimage" src="../img/register/teamleaderactive.svg">
                         </div>
                         <div class="member">
-                            <img src="../img/register/teammemberinactive.svg">
+                            <img id="memberimage" src="../img/register/teammemberinactive.svg">
                         </div>
                     </div>
                     <hr class="underline">
@@ -79,11 +82,11 @@
                             <input type="text" id="phonenumber" name="phonenumber">
                         </div>
                         <div class="formfield">
-                            <label for="teamdetails">Team Name</label>
+                            <label id="teamdetailslabel" for="teamdetails">Team Name</label>
                             <input type="text" id="teamdetails" name="teamdetails">
                     </div>
                     <div class="joinButton">
-                        <img src="../img/register/registerteamleader.svg">
+                        <img id="joinbtn" src="../img/register/registerteamleader.svg">
                     </div>
                 </div>
 

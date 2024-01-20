@@ -93,7 +93,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 5vh;
+    margin-top:3vh;
     width: 100%;
 }
 
@@ -156,7 +156,7 @@
 
 .formfield input{
     width: 100%;
-    height: 4vh;
+    height: 5.5vh;
     margin-top: 1vh;
     margin-bottom: 2vh;
     border: none;
@@ -173,7 +173,7 @@
 }
 
 .joinButton{
-    margin-top: 2vh;
+    margin-top: 1vh;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -184,8 +184,9 @@
 }
 
 .joinButton img{
-    width: 18vw;
-    height: auto;
+    
+    height: 6vh;
+    width: auto;
     margin-left: auto;
     margin-right: auto;
 }
