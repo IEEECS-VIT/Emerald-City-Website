@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.mainContainer{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+}
+
+.sideBar{
+    width: 35vw;
+    height: auto;
+    background: url("../img/register/aurabg.svg");
+    background-position: center;
+}
+
+.rightBar{
+    width: 65vw;
+    height: auto;
+    background: url("../img/register/formbg.svg");
+    background-position: center;
+}
+
+.emeraldCityLogo img{
+    height:20vh;
+    width: auto;
+}
+
+.quote{
+    margin-left: 1vw;
+    color: white;
+    position: absolute;
+    width: 35vw;
+    word-wrap: break-word;
+    top:40%;
+
+}
+
+#doubleQuote{
+    font-family: Gayathri;
+    font-size: 10vh;
+    font-weight: 700;
+    letter-spacing: 0em;
+    text-align: left;
+    height: 1.5vh;
+}
+
+.quoteText{
+    font-family: Chakra Petch;
+    font-weight: 500;
+    font-size: 1.5vw;
+    letter-spacing: 0em;
+    text-align: left;
+    text-wrap: nowrap;
+}
+
+#postQuote, .quoteText{
+    text-indent: 2vw;
+}
+
+#postQuote{
+    margin-top: 4vh;
+    font-family: Playfair Display;
+    font-weight: 700;
+    font-size: 2vw;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.rightBar{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.backButton{
+
+    color:white;
+    position: absolute;
+    font-family: Playfair Display;
+    font-size: 3vh;
+    font-weight: 500;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.formContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5vh;
+    width: 100%;
+}
+
+.heading{
+    color: white;
+    font-family: Playfair Display;
+    font-size: 5vh;
+    font-weight: 700;
+    line-height: 51px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.buttons{
+    margin-top: 1vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1vh;
+}
+
+.buttons img{
+    width: 14vw;
+    height: auto;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+.underline{
+    width: 55%;
+    height: 0.1px;
+    background-color: white;
+}
+.formfields{
+    width: 100%;
+}
+
+.formfield{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.formfield label{
+    color: #11E332;
+    font-family: Playfair Display;
+    font-size: 4vh;
+    font-weight:400;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.formfield input{
+    width: 100%;
+    height: 4vh;
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+    border: none;
+    background-color :#11E33226;
+    backdrop-filter: blur(5px); 
+    color: white;
+    font-family: Chakra Petch;
+    font-size: 3vh;
+    font-weight: 500;
+    line-height: 32px;
+    text-indent: 1vw;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.joinButton{
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.joinButton img{
+    width: 18vw;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mainContainer div{
+    border: 0px orange solid;
+}
+
