@@ -36,6 +36,11 @@ body{
 nav {
   font-size: 1.5rem;
 }
+
+.nav-desk{
+  position:relative;
+  left: -100%;
+}
 nav ul{
   width: 100vw;
   list-style: none;
@@ -149,17 +154,32 @@ nav li:last-child {
   opacity: 0.77;*/
 
   position: relative;
-  top: 2.5em;
+  top: 10vh;
   display: flex;
+  color:#11E332;
+  font-family: Worath;
+  font-size: 6rem;
   justify-content: center;
   align-items: center;
+  margin-bottom: 10vh;
+}
+.mpg{
+  display: block;
 }
 
-.reg img{
+.reg-btn-area{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30vh;
+  margin-bottom: 20vh ;
+}
+/* .reg img{
   width : 33%;
   height:  auto;
   margin-top: 3vw;
-}
+} */
 
 /* .frontp{
   color: #118223;
@@ -537,7 +557,21 @@ nav li:last-child {
   height: auto;
 }
 @media only screen and (max-width:768px){
+  .reg{
+    position: relative;
+    font-size: 4rem;
+    text-align: center;
+    margin-left: 2vw;
+    margin: 3vh 3vh 3vh 3vh;
 
+  }
+  .reg-btn-area{
+
+    margin-bottom: 14vh;
+  }
+  .reg-btn-area img{
+    width : 60vw;
+  }
   .faq img{
     width: 50%;
     height:auto;
