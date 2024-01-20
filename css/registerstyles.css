@@ -217,13 +217,31 @@ a{
         background-position: center;
     }
 
+    .headingContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
     .heading{
         display: none;
+    }
+
+    .mobileheading{
+        display: block;
+        color: white;
+        font-family: Playfair Display;
+        font-size: 3.5vh;
+        font-weight: 400;
+        margin-bottom: 1vh;
     }
 
     .buttons img{
         height: 5vh;
         width: auto;
+        margin-bottom: 1vh;
     }
 
     .formfield{
@@ -231,20 +249,6 @@ a{
     }
     .formfield label{
         font-size: 2vh;
-    }
-
-    .mobileheading{
-        margin-top: 2vh;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 75%;
-        color: white;
-        font-family: Playfair Display;
-        font-size: 2vh;
-        font-weight: 400;
-        text-align: left;
-        margin-bottom: 2.5vh;
     }
 
     hr{
