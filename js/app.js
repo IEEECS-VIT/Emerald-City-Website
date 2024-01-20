@@ -1,3 +1,32 @@
+// Animations
+      const tl = gsap.timeline();
+
+tl.from('.reg', {
+  duration: 3,
+  scale: 4,
+  opacity: 0,
+  ease: 'power2.out',
+})
+.to('.reg', {
+  duration: 0,
+  x: '0%',
+  scale: 1,
+  onComplete: () => {
+    gsap.to('.mpg', {
+      duration: 1,
+      boxShadow: '0 0 20px rgba(0, 255, 0, 0.8)',
+      repeat: -1,
+      yoyo: true,
+    });
+    gsap.to('.nav-desk', {
+      duration: 0.5,
+      left: '0%',
+      ease: 'power2.out',
+    });
+  },
+});
+
+// Functions
 
 function toggleAnswer(element) {
     var answer = element.nextElementSibling;
