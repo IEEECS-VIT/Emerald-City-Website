@@ -108,6 +108,10 @@
 
 }
 
+.mobileheading{
+    display: none;
+}
+
 .buttons{
     margin-top: 1vh;
     width: 100%;
@@ -191,7 +195,61 @@
     margin-right: auto;
 }
 
+a{
+    text-decoration: none;
+    color: inherit
+}
+
 .mainContainer div{
     border: 0px orange solid;
 }
 
+@media only screen and (max-width:768px){
+
+    .sideBar, .backButton{
+        display: none;
+    }
+
+    .rightBar{
+        width: 100vw;
+        height: 100vh;
+        background: url("../img/register/formbg.svg");
+        background-position: center;
+    }
+
+    .heading{
+        display: none;
+    }
+
+    .buttons img{
+        height: 5vh;
+        width: auto;
+    }
+
+    .formfield{
+        width: 75%;
+    }
+    .formfield label{
+        font-size: 2vh;
+    }
+
+    .mobileheading{
+        margin-top: 2vh;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 75%;
+        color: white;
+        font-family: Playfair Display;
+        font-size: 2vh;
+        font-weight: 400;
+        text-align: left;
+        margin-bottom: 2.5vh;
+    }
+
+    hr{
+        margin-bottom: 2.5vh;
+    }
+
+   
+}
