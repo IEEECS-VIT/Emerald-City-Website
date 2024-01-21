@@ -207,6 +207,7 @@ nav li:last-child {
   display: flex;
   justify-content: flex-start;
   margin-left: 3vw;
+  letter-spacing: 0.01rem;
   /* text-align: left; */
 }
 .aboutsection-text{
@@ -239,8 +240,13 @@ nav li:last-child {
   display: flex;
   flex-direction: column;
   justify-content: center; */
-   align-items: center;
+  align-items: center;
+  width: 20vw;
+  height: auto;
   
+}
+.aboutsection-mobileimg{
+  display: none;
 }
 /* .aboutsection-image1{
   width: 25vw;
@@ -257,10 +263,16 @@ nav li:last-child {
     font-size: 1.5rem;
   }
   .aboutsection-content {
-    font-size: 0.8rem;
+    font-size: 1.25rem;
   }
   .aboutsection-image{
     margin-bottom: 2vw;
+  }
+  .aboutsection-image1{
+    display: none;
+  }
+  .aboutsection-mobileimg {
+    display: block;
   }
 }
 
@@ -273,12 +285,12 @@ nav li:last-child {
 
 }
 
-.img3{
+/* .img3{
   position: relative;
   right: 35%;
   top: 1.5em;
 
-}
+} */
 
 .img2{
   position: relative;
