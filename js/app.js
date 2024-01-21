@@ -150,6 +150,19 @@ gsap.from(".faq", {
 
 
 
+
+gsap.from(".img2", {
+  opacity: 0, // Set initial opacity to 0
+  y: -100, // Move down from top (initial position)
+  duration: 1,
+  ease: "power2.out",
+  scrollTrigger: {
+    trigger: ".img2", // Adjust the trigger element accordingly
+    start: "top 50%", // Adjust the start position based on your design
+    toggleActions: "play none none reverse",
+  },
+});
+
   // Scroll-triggered animation for .aboutsection-content p
   gsap.from(".aboutsection-content p", {
     opacity: 0,
