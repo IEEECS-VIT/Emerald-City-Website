@@ -162,6 +162,34 @@ gsap.from(".faq", {
       toggleActions: "play none none reverse",
     },
   });
+
+  // Animation for contact section
+gsap.from(".contact-us", {
+  opacity: 0, // Set initial opacity to 0
+  y: 20, // Move up (initial position)
+  duration: 1,
+  ease: "power2.out",
+  scrollTrigger: {
+    trigger: ".contact-us", // Adjust the trigger element accordingly
+    start: "top 70%", // Adjust the start position based on your design
+    toggleActions: "play none none reverse",
+  },
+});
+
+// Animation for contact icons
+gsap.from(".icons img", {
+  opacity: 0, // Set initial opacity to 0
+  y: 20, // Move up (initial position)
+  stagger: 0.2, // Add stagger for a nice sequential effect
+  duration: 1,
+  ease: "power2.out",
+  scrollTrigger: {
+    trigger: ".icons", // Adjust the trigger element accordingly
+    start: "top 70%", // Adjust the start position based on your design
+    toggleActions: "play none none reverse",
+  },
+});
+
 // Functions
 
 function toggleAnswer(element) {
