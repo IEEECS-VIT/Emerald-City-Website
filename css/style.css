@@ -239,7 +239,7 @@ nav li:last-child {
 .aboutsection-image {
   display: flex;
   flex-direction: column;
-  justify-content: center; 
+  justify-content: center;
   align-items: center;
   width: 20vw;
   height: auto;
@@ -654,7 +654,7 @@ nav li:last-child {
   }
 }
 .faq-item {
-  margin: 6vw;
+  margin: 4vw;
   border-radius: 5px;
   overflow: hidden;
 }
