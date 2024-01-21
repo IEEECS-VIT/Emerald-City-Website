@@ -194,18 +194,90 @@ nav li:last-child {
   text-align: left;
 } */
 
-.about{
-  color: #118223;
+.aboutsection{
+  /* color: #118223;
   font-family: worath;
-  font-size: 20px;
+  font-size: 20px; */
   margin-top: 2vw;
   margin-bottom: 5vw;
   line-height: 22px;
   letter-spacing: 0em;
   position: relative;
   top: 3.9em;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 3vw;
+  letter-spacing: 0.01rem;
   /* text-align: left; */
 }
+.aboutsection-text{
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  width: 100%;
+  height: auto;
+  justify-content: center;
+}
+.aboutsection-header{
+  color: #11E332;
+  font-family: worath;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  /* text-align: left; */
+}
+.aboutsection-content{
+  color: white;
+  /* font-family: Playfair Display; */
+  font-size: 1.5rem;
+}
+/* .aboutsection-image{
+  width: 25vw;
+  height: auto;
+  display: flex;
+  justify-self: start;
+} */
+.aboutsection-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; */
+  align-items: center;
+  width: 20vw;
+  height: auto;
+  
+}
+.aboutsection-mobileimg{
+  display: none;
+}
+/* .aboutsection-image1{
+  width: 25vw;
+} */
+@media only screen and (max-width: 768px) {
+  .aboutsection {
+    flex-direction: column; 
+    align-items: center; 
+  }
+  .aboutsection-text {
+    text-align: center;
+  }
+  .aboutsection-header {
+    font-size: 1.3rem;
+  }
+  .aboutsection-content {
+    font-size: 1.1rem;
+    /* font-family: Playfair Display; */
+  }
+  .aboutsection-image{
+    margin-bottom: 2vw;
+    margin-right: auto;
+  }
+  .aboutsection-image1{
+    display: none;
+  }
+  .aboutsection-mobileimg {
+    display: block;
+  }
+}
+
 
 .info{
   color: white;
@@ -215,12 +287,12 @@ nav li:last-child {
 
 }
 
-.img3{
+/* .img3{
   position: relative;
   right: 35%;
   top: 1.5em;
 
-}
+} */
 
 .img2{
   position: relative;
@@ -248,6 +320,7 @@ nav li:last-child {
 .prizesLabel{
   position: relative;
   display: block;
+  margin-top: 8vw;
   margin-left: auto;
   margin-right: auto;
 }
