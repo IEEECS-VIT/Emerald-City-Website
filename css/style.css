@@ -260,13 +260,15 @@ nav li:last-child {
     text-align: center;
   }
   .aboutsection-header {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   .aboutsection-content {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
+    /* font-family: Playfair Display; */
   }
   .aboutsection-image{
     margin-bottom: 2vw;
+    margin-right: auto;
   }
   .aboutsection-image1{
     display: none;
@@ -318,6 +320,7 @@ nav li:last-child {
 .prizesLabel{
   position: relative;
   display: block;
+  margin-top: 8vw;
   margin-left: auto;
   margin-right: auto;
 }
