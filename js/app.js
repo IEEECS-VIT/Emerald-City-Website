@@ -48,6 +48,17 @@ gsap.registerPlugin(ScrollTrigger);
       },
     });
   });
+  gsap.from(".aboutsection-image1", {
+    y: -100, // Start the animation from above the viewport
+    opacity: 0, // Set initial opacity to 0
+    duration: 1,
+    ease: "power2.out",
+    scrollTrigger: {
+      trigger: ".aboutsection",
+      start: "top 70%", // Adjust this value based on when you want the animation to start
+      toggleActions: "play none none reverse",
+    },
+  });
 
   gsap.from(".aboutsection-header", {
     x: "-100%", // Move from left (initial position)
