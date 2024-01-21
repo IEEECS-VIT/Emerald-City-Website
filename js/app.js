@@ -85,6 +85,19 @@ gsap.registerPlugin(ScrollTrigger);
     },
   });
 
+  // Animation for conductedByLabel
+gsap.from(".conductedByLabel", {
+  opacity: 0, // Set initial opacity to 0
+  y: 20, // Move up (initial position)
+  duration: 1,
+  ease: "power2.out",
+  scrollTrigger: {
+    trigger: ".conductedByLabel", // Adjust the trigger element accordingly
+    start: "top 70%", // Adjust the start position based on your design
+    toggleActions: "play none none reverse",
+  },
+});
+
   // Animation for logos
 gsap.from(".logos img:nth-child(1)", {
   x: "-100%", // Move from left (initial position)
