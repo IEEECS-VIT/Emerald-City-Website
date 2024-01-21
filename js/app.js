@@ -85,6 +85,44 @@ gsap.registerPlugin(ScrollTrigger);
     },
   });
 
+  // Animation for logos
+gsap.from(".logos img:nth-child(1)", {
+  x: "-100%", // Move from left (initial position)
+  opacity: 0, // Set initial opacity to 0
+  duration: 2,
+  ease: "power2.out",
+  scrollTrigger: {
+    trigger: ".logos", // Adjust the trigger element accordingly
+    start: "top 70%", // Adjust the start position based on your design
+    toggleActions: "play none none reverse",
+  },
+});
+
+gsap.from(".logos img:nth-child(2)", {
+  y: "100%", // Move from below (initial position)
+  opacity: 0, // Set initial opacity to 0
+  duration: 2,
+  ease: "power2.out",
+  scrollTrigger: {
+    trigger: ".logos", // Adjust the trigger element accordingly
+    start: "top 70%", // Adjust the start position based on your design
+    toggleActions: "play none none reverse",
+  },
+});
+
+gsap.from(".logos img:nth-child(3)", {
+  x: "100%", // Move from right (initial position)
+  opacity: 0, // Set initial opacity to 0
+  duration: 2,
+  ease: "power2.out",
+  scrollTrigger: {
+    trigger: ".logos", // Adjust the trigger element accordingly
+    start: "top 70%", // Adjust the start position based on your design
+    toggleActions: "play none none reverse",
+  },
+});
+
+
   // Scroll-triggered animation for .aboutsection-content p
   gsap.from(".aboutsection-content p", {
     opacity: 0,
