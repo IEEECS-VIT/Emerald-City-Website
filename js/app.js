@@ -135,6 +135,20 @@ gsap.from(".logos img:nth-child(3)", {
   },
 });
 
+// Animation for faq section
+gsap.from(".faq", {
+  opacity: 0, // Set initial opacity to 0
+  y: 20, // Move up (initial position)
+  duration: 1,
+  ease: "power2.out",
+  scrollTrigger: {
+    trigger: ".faq", // Adjust the trigger element accordingly
+    start: "top 70%", // Adjust the start position based on your design
+    toggleActions: "play none none reverse",
+  },
+});
+
+
 
   // Scroll-triggered animation for .aboutsection-content p
   gsap.from(".aboutsection-content p", {
