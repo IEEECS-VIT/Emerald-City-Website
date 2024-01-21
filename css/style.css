@@ -239,11 +239,11 @@ nav li:last-child {
 .aboutsection-image {
   display: flex;
   flex-direction: column;
-  justify-content: center; */
+  justify-content: center;
   align-items: center;
   width: 20vw;
   height: auto;
-  
+
 }
 .aboutsection-mobileimg{
   display: none;
@@ -253,8 +253,8 @@ nav li:last-child {
 } */
 @media only screen and (max-width: 768px) {
   .aboutsection {
-    flex-direction: column; 
-    align-items: center; 
+    flex-direction: column;
+    align-items: center;
   }
   .aboutsection-text {
     text-align: center;
@@ -654,8 +654,7 @@ nav li:last-child {
   }
 }
 .faq-item {
-  margin: auto;
-  padding: 10px;
+  margin: 4vw;
   border-radius: 5px;
   overflow: hidden;
 }

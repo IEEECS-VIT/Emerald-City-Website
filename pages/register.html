@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
     <head>
+      <script src="https://unpkg.com/gsap@3.9.0"></script>
+
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        
-        <meta name="viewport" content="width=device-width, initial-scale=1">      
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Emerald City</title>
         <meta name="description" content="">
 
@@ -11,13 +13,13 @@
         <meta property="og:type" content="">
         <meta property="og:url" content="">
         <meta property="og:image" content="">
-      
+
         <link rel="icon" href="favicon.ico" sizes="any">
         <link rel="icon" href="icon.svg" type="image/svg+xml">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600&family=Gayathri:wght@700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">        
+        <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600&family=Gayathri:wght@700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
         <link href="../css/registerstyles.css" rel="stylesheet">
 
         <script src="../js/register.js" defer></script>
@@ -29,9 +31,9 @@
                     <img src="../img/register/logo.svg" alt="Emerald City Logo">
                 </div>
                 <div class="quote">
-                   <div id="doubleQuote">“</div> 
+                   <div id="doubleQuote">“</div>
                     <p class="quoteText">
-                        
+
                         In realms of green, where emeralds gleam,
                     </p>
                     <p class="quoteText">
@@ -101,4 +103,17 @@
 
             </div>
         </div>
+        <script>
+          gsap.from('.sideBar', { duration: 1, x: '-100%', ease: 'power2.out' });
+          const tl = gsap.timeline({
+        defaults: { opacity: 0, ease: 'power2.out', duration: 0.5 },
+      });
+
+      tl.from('.rightBar', { x: '100%' })
+        .from('.backButton', { y: -20 , duration:0.8 }, '-=0.5')
+        .from('.headingContainer', { y: -20 , duration:0.8 }, '-=0.3')
+        .from('.buttons', { y: -20 , duration:0.8 }, '-=0.3')
+        .from('.underline', { scaleX: 0 , duration:0.8 }, '-=0.3')
+        .from('.formfields', { y: -20, stagger: 0.2 , duration:0.8 }, '-=0.3');
+        </script>
     </body></html>

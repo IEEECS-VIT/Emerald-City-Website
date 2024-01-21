@@ -2,7 +2,9 @@
     margin: 0;
     padding: 0;
 }
-
+html{
+  background-color: black;
+}
 .mainContainer{
     display: flex;
     flex-direction: row;
@@ -165,7 +167,7 @@
     margin-bottom: 2vh;
     border: none;
     background-color :#11E33226;
-    backdrop-filter: blur(5px); 
+    backdrop-filter: blur(5px);
     color: white;
     font-family: Chakra Petch;
     font-size: 3vh;
@@ -188,7 +190,7 @@
 }
 
 .joinButton img{
-    
+
     height: 6vh;
     width: auto;
     margin-left: auto;
@@ -255,5 +257,5 @@ a{
         margin-bottom: 2.5vh;
     }
 
-   
+
 }
