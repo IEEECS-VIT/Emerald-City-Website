@@ -34,6 +34,21 @@ tl.from('.reg', {
   },
 });
 
+gsap.registerPlugin(ScrollTrigger);
+
+  gsap.utils.toArray(".faq-item").forEach((faqItem, index) => {
+    gsap.from(faqItem, {
+      opacity: 0,
+      y: -20,
+      duration: 1,
+      scrollTrigger: {
+        trigger: faqItem,
+        start: "top 80%", // Adjust this value based on when you want the animation to start
+        toggleActions: "play none none reverse",
+      },
+    });
+  });
+
 // Functions
 
 function toggleAnswer(element) {
