@@ -148,6 +148,17 @@ gsap.from(".faq", {
   },
 });
 
+gsap.from(".prizesLabel", {
+  opacity: 0, // Set initial opacity to 0
+  y: -50, // Move down from top (adjust as needed)
+  duration: 1,
+  ease: "power2.out",
+  scrollTrigger: {
+    trigger: ".prizesLabel", // Adjust the trigger element accordingly
+    start: "top 70%", // Adjust the start position based on your design
+    toggleActions: "play none none reverse",
+  },
+});
 
 
 
