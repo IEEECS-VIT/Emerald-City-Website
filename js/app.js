@@ -49,6 +49,30 @@ gsap.registerPlugin(ScrollTrigger);
     });
   });
 
+  gsap.from(".aboutsection-header", {
+    x: "-100%", // Move from left (initial position)
+    opacity: 0, // Set initial opacity to 0
+    duration: 1,
+    ease: "power2.out",
+    scrollTrigger: {
+      trigger: ".aboutsection", // Adjust the trigger element accordingly
+      start: "top 70%",
+      toggleActions: "play none none reverse",
+    },
+  });
+
+  // Scroll-triggered animation for .aboutsection-content p
+  gsap.from(".aboutsection-content p", {
+    opacity: 0,
+    y: 50,
+    duration: 1,
+    ease: "power2.out",
+    scrollTrigger: {
+      trigger: ".aboutsection",
+      start: "top 60%",
+      toggleActions: "play none none reverse",
+    },
+  });
 // Functions
 
 function toggleAnswer(element) {
