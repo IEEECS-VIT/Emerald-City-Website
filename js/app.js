@@ -7,7 +7,7 @@
 
 
 // Animations
-      const tl = gsap.timeline();
+const tl = gsap.timeline();
 
 tl.from('.reg', {
   duration: 3,
@@ -33,10 +33,11 @@ tl.from('.reg', {
     });
   },
 });
+
 const regBtnAreaAnimation = gsap.timeline({
   scrollTrigger: {
     trigger: ".reg-btn-area",
-    start: "top 100%", // Adjust the start position based on your design
+    start: "top 100%",
     toggleActions: "play none none reverse",
   },
 });
@@ -47,169 +48,168 @@ regBtnAreaAnimation.from(".reg-btn-area", {
   duration: 2,
   ease: "power2.out",
 });
+
 gsap.registerPlugin(ScrollTrigger);
 
-  gsap.utils.toArray(".faq-item").forEach((faqItem, index) => {
-    gsap.from(faqItem, {
-      opacity: 0,
-      y: -20,
-      duration: 1,
-      scrollTrigger: {
-        trigger: faqItem,
-        start: "top 80%", // Adjust this value based on when you want the animation to start
-        toggleActions: "play none none reverse",
-      },
-    });
-  });
-  gsap.from(".aboutsection-image1", {
-    y: -100, // Start the animation from above the viewport
-    opacity: 0, // Set initial opacity to 0
+gsap.utils.toArray(".faq-item").forEach((faqItem, index) => {
+  gsap.from(faqItem, {
+    opacity: 0,
+    y: -20,
     duration: 1,
-    ease: "power2.out",
     scrollTrigger: {
-      trigger: ".aboutsection",
-      start: "top 70%", // Adjust this value based on when you want the animation to start
+      trigger: faqItem,
+      start: "top 80%",
       toggleActions: "play none none reverse",
     },
   });
+});
 
-  gsap.from(".aboutsection-header", {
-    x: "-100%", // Move from left (initial position)
-    opacity: 0, // Set initial opacity to 0
-    duration: 1,
-    ease: "power2.out",
-    scrollTrigger: {
-      trigger: ".aboutsection", // Adjust the trigger element accordingly
-      start: "top 70%",
-      toggleActions: "play none none reverse",
-    },
-  });
-
-  // Animation for conductedByLabel
-gsap.from(".conductedByLabel", {
-  opacity: 0, // Set initial opacity to 0
-  y: 20, // Move up (initial position)
+gsap.from(".aboutsection-image1", {
+  y: -100,
+  opacity: 0,
   duration: 1,
   ease: "power2.out",
   scrollTrigger: {
-    trigger: ".conductedByLabel", // Adjust the trigger element accordingly
-    start: "top 70%", // Adjust the start position based on your design
+    trigger: ".aboutsection",
+    start: "top 70%",
     toggleActions: "play none none reverse",
   },
 });
 
-  // Animation for logos
+gsap.from(".aboutsection-header", {
+  x: "-100%",
+  opacity: 0,
+  duration: 1,
+  ease: "power2.out",
+  scrollTrigger: {
+    trigger: ".aboutsection",
+    start: "top 70%",
+    toggleActions: "play none none reverse",
+  },
+});
+
+// Animation for conductedByLabel
+gsap.from(".conductedByLabel", {
+  opacity: 0,
+  y: 20,
+  duration: 1,
+  ease: "power2.out",
+  scrollTrigger: {
+    trigger: ".conductedByLabel",
+    start: "top 70%",
+    toggleActions: "play none none reverse",
+  },
+});
+
+// Animation for logos
 gsap.from(".logos img:nth-child(1)", {
-  x: "-100%", // Move from left (initial position)
-  opacity: 0, // Set initial opacity to 0
+  x: "-100%",
+  opacity: 0,
   duration: 2,
   ease: "power2.out",
   scrollTrigger: {
-    trigger: ".logos", // Adjust the trigger element accordingly
-    start: "top 70%", // Adjust the start position based on your design
+    trigger: ".logos",
+    start: "top 70%",
     toggleActions: "play none none reverse",
   },
 });
 
 gsap.from(".logos img:nth-child(2)", {
-  y: "100%", // Move from below (initial position)
-  opacity: 0, // Set initial opacity to 0
+  y: "100%",
+  opacity: 0,
   duration: 2,
   ease: "power2.out",
   scrollTrigger: {
-    trigger: ".logos", // Adjust the trigger element accordingly
-    start: "top 70%", // Adjust the start position based on your design
+    trigger: ".logos",
+    start: "top 70%",
     toggleActions: "play none none reverse",
   },
 });
 
 gsap.from(".logos img:nth-child(3)", {
-  x: "100%", // Move from right (initial position)
-  opacity: 0, // Set initial opacity to 0
+  x: "100%",
+  opacity: 0,
   duration: 2,
   ease: "power2.out",
   scrollTrigger: {
-    trigger: ".logos", // Adjust the trigger element accordingly
-    start: "top 70%", // Adjust the start position based on your design
+    trigger: ".logos",
+    start: "top 70%",
     toggleActions: "play none none reverse",
   },
 });
 
 // Animation for faq section
 gsap.from(".faq", {
-  opacity: 0, // Set initial opacity to 0
-  y: 20, // Move up (initial position)
+  opacity: 0,
+  y: 20,
   duration: 1,
   ease: "power2.out",
   scrollTrigger: {
-    trigger: ".faq", // Adjust the trigger element accordingly
-    start: "top 70%", // Adjust the start position based on your design
+    trigger: ".faq",
+    start: "top 70%",
     toggleActions: "play none none reverse",
   },
 });
 
 gsap.from(".prizesLabel", {
-  opacity: 0, // Set initial opacity to 0
-  y: -50, // Move down from top (adjust as needed)
+  opacity: 0,
+  y: -50,
   duration: 1,
   ease: "power2.out",
   scrollTrigger: {
-    trigger: ".prizesLabel", // Adjust the trigger element accordingly
-    start: "top 70%", // Adjust the start position based on your design
+    trigger: ".prizesLabel",
+    start: "top 70%",
     toggleActions: "play none none reverse",
   },
 });
-
-
 
 gsap.from(".img2", {
-  opacity: 0, // Set initial opacity to 0
-  y: -100, // Move down from top (initial position)
+  opacity: 0,
+  y: -100,
   duration: 1,
   ease: "power2.out",
   scrollTrigger: {
-    trigger: ".img2", // Adjust the trigger element accordingly
-    start: "top 50%", // Adjust the start position based on your design
+    trigger: ".img2",
+    start: "top 50%",
     toggleActions: "play none none reverse",
   },
 });
 
-  // Scroll-triggered animation for .aboutsection-content p
-  gsap.from(".aboutsection-content p", {
-    opacity: 0,
-    y: 50,
-    duration: 1,
-    ease: "power2.out",
-    scrollTrigger: {
-      trigger: ".aboutsection",
-      start: "top 60%",
-      toggleActions: "play none none reverse",
-    },
-  });
-
-  // Animation for contact section
-gsap.from(".contact-us", {
-  opacity: 0, // Set initial opacity to 0
-  y: 20, // Move up (initial position)
+gsap.from(".aboutsection-content p", {
+  opacity: 0,
+  y: 50,
   duration: 1,
   ease: "power2.out",
   scrollTrigger: {
-    trigger: ".contact-us", // Adjust the trigger element accordingly
-    start: "top 70%", // Adjust the start position based on your design
+    trigger: ".aboutsection",
+    start: "top 60%",
+    toggleActions: "play none none reverse",
+  },
+});
+
+// Animation for contact section
+gsap.from(".contact-us", {
+  opacity: 0,
+  y: 20,
+  duration: 1,
+  ease: "power2.out",
+  scrollTrigger: {
+    trigger: ".contact-us",
+    start: "top 70%",
     toggleActions: "play none none reverse",
   },
 });
 
 // Animation for contact icons
 gsap.from(".icons img", {
-  opacity: 0, // Set initial opacity to 0
-  y: 20, // Move up (initial position)
-  stagger: 0.2, // Add stagger for a nice sequential effect
+  opacity: 0,
+  y: 20,
+  stagger: 0.2,
   duration: 1,
   ease: "power2.out",
   scrollTrigger: {
-    trigger: ".icons", // Adjust the trigger element accordingly
-    start: "top 70%", // Adjust the start position based on your design
+    trigger: ".icons",
+    start: "top 90%",
     toggleActions: "play none none reverse",
   },
 });
