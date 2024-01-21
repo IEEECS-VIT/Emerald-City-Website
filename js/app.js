@@ -33,7 +33,20 @@ tl.from('.reg', {
     });
   },
 });
+const regBtnAreaAnimation = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".reg-btn-area",
+    start: "top 100%", // Adjust the start position based on your design
+    toggleActions: "play none none reverse",
+  },
+});
 
+regBtnAreaAnimation.from(".reg-btn-area", {
+  opacity: 0,
+  y: 50,
+  duration: 2,
+  ease: "power2.out",
+});
 gsap.registerPlugin(ScrollTrigger);
 
   gsap.utils.toArray(".faq-item").forEach((faqItem, index) => {
