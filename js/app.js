@@ -270,3 +270,43 @@ navLinks.forEach(function(link) {
 document.getElementById('toggle2').addEventListener('click', function() {
   sidebar.classList.toggle('open');
 });
+
+
+// TImer
+
+const countDownDate = new Date("Mar 1, 2024 12:00:00").getTime();
+
+  // Update the countdown every 1 second
+  const countdownInterval = setInterval(updateCountdown, 1000);
+
+  function updateCountdown() {
+    // Get the current date and time
+    const now = new Date().getTime();
+
+    // Calculate the remaining time
+    const distance = countDownDate - now;
+
+    if (distance < 0) {
+      // If the countdown is over, display a message or take appropriate action
+      clearInterval(countdownInterval);
+      document.querySelector('.timer-container').innerHTML = 'Registration Closed';
+      return;
+    }
+
+    // Calculate days, hours, minutes, and seconds
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    // Display the countdown
+    document.getElementById("days").innerText = formatTime(days);
+    document.getElementById("hours").innerText = formatTime(hours);
+    document.getElementById("minutes").innerText = formatTime(minutes);
+    document.getElementById("seconds").innerText = formatTime(seconds);
+  }
+
+  function formatTime(time) {
+    // Add leading zero if the time is less than 10
+    return time < 10 ? "0" + time : time;
+  }

@@ -175,7 +175,7 @@ nav li:last-child {
   position: relative;
   justify-content: center;
   align-items: center;
-  margin-top: 30vh;
+  margin-top: 10vh;
   margin-bottom: 20vh ;
 }
 /* .reg img{
@@ -617,7 +617,20 @@ nav li:last-child {
 #background2 {
   background-image: url('../img/background.svg');
 }
+.timer-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 25vh;
+  color: #00FF29;
+  font-size: 2rem;
+}
 
+#days, #hours, #minutes, #seconds {
+  color: #00FF29;
+  font-size: 4rem;
+  display: inline-block;
+  margin: 0 10px;
+}
 
 
 .faq{
@@ -633,6 +646,14 @@ nav li:last-child {
   height: auto;
 }
 @media only screen and (max-width:768px){
+  .timer-container{
+    font-size: 1.2rem;
+  }
+
+#days, #hours, #minutes, #seconds {
+  font-size: 1.5rem;
+}
+
   .reg{
     position: relative;
     font-size: 4rem;
