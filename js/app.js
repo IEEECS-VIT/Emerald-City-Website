@@ -22,7 +22,7 @@ tl.from('.reg', {
   onComplete: () => {
     gsap.to('.mpg', {
       duration: 1,
-      boxShadow: '0 0 20px rgba(0, 255, 0, 0.8)',
+      textShadow: '0 0 20px rgba(0, 255, 0, 0.8)',
       repeat: -1,
       yoyo: true,
     });
