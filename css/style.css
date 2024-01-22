@@ -24,6 +24,7 @@ html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
+
 }
 
 body{
@@ -119,6 +120,10 @@ nav li:last-child {
 }
 
 @media(max-width: 800px){
+  .main-logo{
+    margin-left: 1.25rem;
+    margin-top: auto;
+  }
   .hideOnMobile{
     display: none;
   }
