@@ -166,9 +166,8 @@ html{
     height: 5.5vh;
     margin-top: 1vh;
     margin-bottom: 2vh;
-    border: none;
+    border: 0.1vw solid #11E332;
     background-color :#11E33226;
-    backdrop-filter: blur(5px);
     color: white;
     font-family: Chakra Petch;
     font-size: 3vh;
@@ -238,7 +237,7 @@ a{
         font-family: Playfair Display;
         font-size: 3.5vh;
         font-weight: 400;
-        margin-bottom: 1vh;
+        margin-bottom: 0.3vh;
     }
 
     .buttons img{
