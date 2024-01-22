@@ -59,7 +59,7 @@ gsap.utils.toArray(".faq-item").forEach((faqItem, index) => {
     scrollTrigger: {
       trigger: faqItem,
       start: "top 80%",
-      toggleActions: "play none none reverse",
+      toggleActions: "play pause restart reverse",
     },
   });
 });
@@ -72,7 +72,7 @@ gsap.from(".aboutsection-image1", {
   scrollTrigger: {
     trigger: ".aboutsection",
     start: "top 70%",
-    toggleActions: "play none none reverse",
+    toggleActions: "play pause restart reverse",
   },
 });
 
@@ -84,7 +84,7 @@ gsap.from(".aboutsection-header", {
   scrollTrigger: {
     trigger: ".aboutsection",
     start: "top 70%",
-    toggleActions: "play none none reverse",
+    toggleActions: "play pause restart reverse",
   },
 });
 
@@ -110,7 +110,7 @@ gsap.from(".logos img:nth-child(1)", {
   scrollTrigger: {
     trigger: ".logos",
     start: "top 70%",
-    toggleActions: "play none none reverse",
+    toggleActions: "play pause restart reverse",
   },
 });
 
@@ -122,7 +122,7 @@ gsap.from(".logos img:nth-child(2)", {
   scrollTrigger: {
     trigger: ".logos",
     start: "top 70%",
-    toggleActions: "play none none reverse",
+    toggleActions: "play pause restart reverse",
   },
 });
 
@@ -134,7 +134,7 @@ gsap.from(".logos img:nth-child(3)", {
   scrollTrigger: {
     trigger: ".logos",
     start: "top 70%",
-    toggleActions: "play none none reverse",
+    toggleActions: "play pause restart reverse",
   },
 });
 
@@ -147,7 +147,7 @@ gsap.from(".faq", {
   scrollTrigger: {
     trigger: ".faq",
     start: "top 70%",
-    toggleActions: "play none none reverse",
+    toggleActions: "play pause resume pause",
   },
 });
 
@@ -183,7 +183,7 @@ gsap.from(".aboutsection-content p", {
   scrollTrigger: {
     trigger: ".aboutsection",
     start: "top 60%",
-    toggleActions: "play none none reverse",
+    toggleActions: "play pause restart reverse",
   },
 });
 
@@ -196,7 +196,7 @@ gsap.from(".contact-us", {
   scrollTrigger: {
     trigger: ".contact-us",
     start: "top 70%",
-    toggleActions: "play none none reverse",
+    toggleActions: "play pause restart reverse",
   },
 });
 
@@ -210,7 +210,7 @@ gsap.from(".icons img", {
   scrollTrigger: {
     trigger: ".icons",
     start: "top 90%",
-    toggleActions: "play none none reverse",
+    toggleActions: "play pause restart reverse",
   },
 });
 
