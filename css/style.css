@@ -123,7 +123,7 @@ nav li:last-child {
 @media(max-width: 800px){
   .main-logo{
     margin-left: 1.25rem;
-    margin-top: auto;
+    margin-top: 1.25rem;
   }
   .hideOnMobile{
     display: none;

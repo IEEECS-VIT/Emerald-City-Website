@@ -95,8 +95,9 @@ html{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top:3vh;
+    margin-top:2vh;
     width: 100%;
+
 }
 
 .heading{
@@ -208,7 +209,7 @@ a{
 
 @media only screen and (max-width:768px){
 
-    .sideBar, .backButton{
+    .sideBar{
         display: none;
     }
 
@@ -250,7 +251,8 @@ a{
         width: 75%;
     }
     .formfield label{
-        font-size: 2vh;
+        font-weight:700;
+        font-size: 2.5vh;
     }
 
     hr{
