@@ -254,10 +254,16 @@ nav li:last-child {
 .aboutsection-mobileimg{
   display: none;
 }
+.small-diamond {
+  display: none;
+}
 /* .aboutsection-image1{
   width: 25vw;
 } */
 @media only screen and (max-width: 768px) {
+  .small-diamond {
+    display: block;
+  }
   .aboutsection {
     flex-direction: column;
     align-items: center;
