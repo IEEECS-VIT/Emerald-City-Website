@@ -217,22 +217,23 @@ gsap.from(".icons img", {
 // Functions
 
 function toggleAnswer(element) {
-    var answer = element.nextElementSibling;
-    var arrowIcon = element.querySelector('.arrow-icon');
+  var answer = element.nextElementSibling;
+  var arrowIcon = element.querySelector('.arrow-icon');
 
-    if (answer.style.display === 'block') {
-        answer.style.animation = 'fadeOutUp 0.5s ease-out';
-        arrowIcon.style.transform = 'rotate(0deg)';
-        setTimeout(function () {
-            answer.style.display = 'none';
-            answer.style.animation = '';
-        }, 500);
-    } else {
-        answer.style.display = 'block';
-        answer.style.animation = 'fadeInDown 0.5s ease-out';
-        arrowIcon.style.transform = 'rotate(180deg)';
-    }
+  if (answer.style.display === 'block') {
+      answer.style.animation = 'fadeOutUp 0.5s ease-out';
+      gsap.to(arrowIcon, { duration: 0.5, rotation: 0, ease: 'power2.out' });
+
+      setTimeout(function () {
+          answer.style.display = 'none';
+          answer.style.animation = '';
+      }, 500);
+  } else {
+      answer.style.display = 'block';
+      answer.style.animation = 'fadeInDown 0.5s ease-out';
+      gsap.to(arrowIcon, { duration: 0.5, rotation: 180, ease: 'power2.out' });
   }
+}
 
   var questionElements = document.querySelectorAll('.question');
   questionElements.forEach(function(element) {
