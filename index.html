@@ -22,6 +22,7 @@
   <meta name="theme-color" content="#000103">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/split-type"></script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -99,12 +100,12 @@
     <div class="reg">
       <div class="mpg">Emerald City 2.0</div>
     </div>
-    <div class="reg-btn-area">
+    <div id="reg-btn" class="reg-btn-area">
       <a href="/pages/register.html">
         <img src="img/Reg button.svg" alt="reg button">
       </a>
     </div>
-    <div class="img2">
+    <div id="small-dia" class="img2">
       <center>
         <br>
         <img class="small-diamond"src="img/Group 1191.svg" alt="small diamond">
@@ -115,20 +116,20 @@
 
   </div>
   <div class="aboutsection" id="aboutsection">
-    <div class="aboutsection-text">
+    <div id="aboutsection-text" class="aboutsection-text">
       <div class="aboutsection-header"><h2>About Emerald City</h2> </div>
-      <div class="aboutsection-content"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas recusandae earum ad sequi
-        incidunt perferendis numquam accusamus, vel et. Ab, amet voluptates nulla neque itaque in quidem enim repellat
-        esse.
-        <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit vitae laudantium, corporis enim dignissimos
-        cum nisi rer.
-        </br>
-        <br>met lorem ipsum dorum blah blah</br> </p></div>
+      <div id="aboutsection-content"class="aboutsection-content">The Emerald City Treasure Hunt is not just an event; 
+        it's a journey that fuses technology, teamwork, and the spirit of adventure. 
+        As the flagship event of the IEEE-CS chapter at VIT Vellore, this large-scale treasure hunt promises to be an 
+        extraordinary experience for participants and a unique platform for sponsors to showcase their support 
+        for innovation and collaboration. This year, we're bringing the high seas to the digital world with a captivating pirate theme. 
+        Picture participants donning their virtual pirate hats, navigating through the twists and turns of the Emerald City,
+         and decoding clues to uncover hidden treasures. It's an adventure that promises excitement, companionship, and a touch of swashbuckling fun.</div>
     </div>
     <div class="aboutsection-image">
-      <img class="aboutsection-image1" src="img/about-diamond.svg" alt="diamond">
+      <img id="floating-diamond" class="aboutsection-image1" src="img/about-diamond.svg" alt="diamond">
       <!-- <img  class="aboutsection-image2"src="img/about-diamond-border.svg" alt="" srcset=""> -->
-      <img class="aboutsection-mobileimg" src="img/about-mobileDiamond.svg" alt="small-diamond" srcset="">
+      <img id="mobileonly-diamond" class="aboutsection-mobileimg" src="img/about-mobileDiamond.svg" alt="small-diamond" srcset="">
     </div>
   </div>
 

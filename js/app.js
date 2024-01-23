@@ -7,6 +7,8 @@
 
 
 // Animations
+
+
 const tl = gsap.timeline();
 
 tl.from('.reg', {
@@ -64,29 +66,37 @@ gsap.utils.toArray(".faq-item").forEach((faqItem, index) => {
   });
 });
 
-gsap.from(".aboutsection-image1", {
-  y: -100,
-  opacity: 0,
-  duration: 1,
-  ease: "power2.out",
-  scrollTrigger: {
-    trigger: ".aboutsection",
-    start: "top 70%",
-    toggleActions: "play pause restart reverse",
-  },
+gsap.to("#floating-diamond", {
+  y: 30,  
+  repeat: -1, 
+  yoyo: true, 
+  duration: 1, 
+  ease: "power1.inOut" 
 });
 
-gsap.from(".aboutsection-header", {
-  x: "-100%",
-  opacity: 0,
-  duration: 1,
-  ease: "power2.out",
-  scrollTrigger: {
-    trigger: ".aboutsection",
-    start: "top 70%",
-    toggleActions: "play pause restart reverse",
-  },
-});
+// gsap.from(".aboutsection-image1", {
+//   y: -100,
+//   opacity: 0,
+//   duration: 1,
+//   ease: "power2.out",
+//   scrollTrigger: {
+//     trigger: ".aboutsection",
+//     start: "top 70%",
+//     toggleActions: "play pause restart reverse",
+//   },
+// });
+
+// gsap.from(".aboutsection-header", {
+//   x: "-100%",
+//   opacity: 0,
+//   duration: 1,
+//   ease: "power2.out",
+//   scrollTrigger: {
+//     trigger: ".aboutsection",
+//     start: "top 70%",
+//     toggleActions: "play pause restart reverse",
+//   },
+// });
 
 // Animation for conductedByLabel
 gsap.from(".conductedByLabel", {
@@ -163,6 +173,7 @@ gsap.from(".prizesLabel", {
   },
 });
 
+//Animation for diamond image in about page
 gsap.from(".img2", {
   opacity: 0,
   y: -100,
@@ -175,17 +186,78 @@ gsap.from(".img2", {
   },
 });
 
-gsap.from(".aboutsection-content p", {
+// Animation for text splitting in about section
+document.addEventListener("DOMContentLoaded", function () {
+  
+  const split = new SplitType("#aboutsection-text", { types: "words,chars" });
+
+//   gsap.from(split.chars, {
+//     opacity: 0,
+//     y: 20,
+//     stagger: 0.05, // Adjust the stagger for a sequential effect
+//     duration: 1,
+//     ease: "power3.out",
+//     scrollTrigger: {
+//       trigger: "#aboutsection-content",
+//       start: "top center+=100", 
+//       end: "bottom center", 
+//       // marker: true;
+//       toggleActions: "play none none none",
+//     },
+//     onComplete: () => {
+//       gsap.to("#aboutsection-content", { opacity: 1, duration: 0.5 }); 
+//     },
+//   });
+// });
+
+gsap.from(split.chars, {
   opacity: 0,
-  y: 50,
-  duration: 1,
-  ease: "power2.out",
+  y: 20,
+  stagger: 0.05, 
+  duration: 4,
+  ease: "power3.out",
   scrollTrigger: {
-    trigger: ".aboutsection",
-    start: "top 60%",
-    toggleActions: "play pause restart reverse",
+    trigger: "#small-dia",
+    start: "top center-=50",
+    endTrigger: "#mobileonly-diamond",
+    end: "bottom center+=50",
+    markers: true, 
+    scrub: 7, 
+    toggleActions: "play none none none",
+    onComplete: () => {
+      gsap.to("#aboutsection-text", { opacity: 1, duration: 0.5 }); 
+    },
   },
 });
+});
+
+// let textElem = document.querySelector('.text')
+
+// gsap.to(".typing_text", {
+//   text: {
+//     value: textElem.innerText
+//   },
+//   scrollTrigger: {
+//     trigger: ".section-typing_text",
+//     pin: ".typing_text-heading",
+//     start: "center center",
+//     end: "center top",
+//     scrub: true,
+//     markers: true
+//   }
+// });
+
+// gsap.from(".aboutsection-content p", {
+//   opacity: 0,
+//   y: 50,
+//   duration: 1,
+//   ease: "power2.out",
+//   scrollTrigger: {
+//     trigger: ".aboutsection",
+//     start: "top 60%",
+//     toggleActions: "play pause restart reverse",
+//   },
+// });
 
 // Animation for contact section
 gsap.from(".contact-us", {
