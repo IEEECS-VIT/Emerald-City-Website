@@ -155,7 +155,7 @@ html{
     color: #11E332;
     font-family: Playfair Display;
     font-size: 4vh;
-    font-weight:400;
+    font-weight:bolder;
     letter-spacing: 0em;
     text-align: left;
 
@@ -166,9 +166,8 @@ html{
     height: 5.5vh;
     margin-top: 1vh;
     margin-bottom: 2vh;
-    border: none;
+    border: 1px rgb(255,255,255,0.75) solid;
     background-color :#11E33226;
-    backdrop-filter: blur(5px);
     color: white;
     font-family: Chakra Petch;
     font-size: 3vh;
@@ -209,7 +208,7 @@ a{
 
 @media only screen and (max-width:768px){
 
-    .sideBar{
+    .sideBar, .backButton{
         display: none;
     }
 
