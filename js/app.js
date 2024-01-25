@@ -98,6 +98,15 @@ gsap.to("#floating-diamond", {
 //   },
 // });
 
+//Animation for debris
+gsap.to("#debris", {
+  y: 30,  
+  repeat: -1, 
+  yoyo: true, 
+  duration: 1, 
+  ease: "power1.inOut" 
+});
+
 // Animation for conductedByLabel
 gsap.from(".conductedByLabel", {
   opacity: 0,
@@ -221,7 +230,7 @@ gsap.from(split.chars, {
     start: "top center-=50",
     endTrigger: "#mobileonly-diamond",
     end: "bottom center+=50",
-    markers: true, 
+    // markers: true, 
     scrub: 7, 
     toggleActions: "play none none none",
     onComplete: () => {

@@ -234,7 +234,7 @@ nav li:last-child {
 }
 .aboutsection-content{
   color: white;
-  /* font-family: Playfair Display; */
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 1.5rem;
   letter-spacing: 0.05rem;
   /* opacity: 0; */
