@@ -38,7 +38,7 @@ const regBtnAreaAnimation = gsap.timeline({
   scrollTrigger: {
     trigger: ".reg-btn-area",
     start: "top 100%",
-    toggleActions: "play none none reverse",
+    toggleActions: "play none none none",
   },
 });
 
@@ -59,22 +59,26 @@ gsap.utils.toArray(".faq-item").forEach((faqItem, index) => {
     scrollTrigger: {
       trigger: faqItem,
       start: "top 80%",
-      toggleActions: "play pause restart reverse",
+      toggleActions: "play none none none",
     },
   });
 });
 
-gsap.from(".aboutsection-image1", {
-  y: -100,
-  opacity: 0,
-  duration: 1,
-  ease: "power2.out",
-  scrollTrigger: {
-    trigger: ".aboutsection",
-    start: "top 70%",
-    toggleActions: "play pause restart reverse",
-  },
-});
+  gsap.to("#floating-diamond", {
+    y: 30,
+    duration: 1,
+    repeat: -1,
+    yoyo: true,
+    ease: "power1.inOut",
+  });
+
+  gsap.to("#debris", {
+    y: 30,
+    duration: 1,
+    repeat: -1,
+    yoyo: true,
+    ease: "power1.inOut",
+  });
 
 gsap.from(".aboutsection-header", {
   x: "-100%",
@@ -84,7 +88,7 @@ gsap.from(".aboutsection-header", {
   scrollTrigger: {
     trigger: ".aboutsection",
     start: "top 70%",
-    toggleActions: "play pause restart reverse",
+    toggleActions: "play none none none",
   },
 });
 
@@ -97,7 +101,7 @@ gsap.from(".conductedByLabel", {
   scrollTrigger: {
     trigger: ".conductedByLabel",
     start: "top 70%",
-    toggleActions: "play none none reverse",
+    toggleActions: "play none none none",
   },
 });
 
@@ -110,7 +114,7 @@ gsap.from(".logos img:nth-child(1)", {
   scrollTrigger: {
     trigger: ".logos",
     start: "top 70%",
-    toggleActions: "play pause restart reverse",
+    toggleActions: "play none none none",
   },
 });
 
@@ -122,7 +126,7 @@ gsap.from(".logos img:nth-child(2)", {
   scrollTrigger: {
     trigger: ".logos",
     start: "top 70%",
-    toggleActions: "play pause restart reverse",
+    toggleActions: "play none none none",
   },
 });
 
@@ -134,7 +138,7 @@ gsap.from(".logos img:nth-child(3)", {
   scrollTrigger: {
     trigger: ".logos",
     start: "top 70%",
-    toggleActions: "play pause restart reverse",
+    toggleActions: "play none none none",
   },
 });
 
@@ -147,7 +151,7 @@ gsap.from(".faq", {
   scrollTrigger: {
     trigger: ".faq",
     start: "top 70%",
-    toggleActions: "play pause resume pause",
+    toggleActions: "play none none none",
   },
 });
 
@@ -159,7 +163,7 @@ gsap.from(".prizesLabel", {
   scrollTrigger: {
     trigger: ".prizesLabel",
     start: "top 70%",
-    toggleActions: "play none none reverse",
+    toggleActions: "play none none none",
   },
 });
 
@@ -171,7 +175,7 @@ gsap.from(".img2", {
   scrollTrigger: {
     trigger: ".img2",
     start: "top 50%",
-    toggleActions: "play none none reverse",
+    toggleActions: "play none none none",
   },
 });
 
@@ -183,7 +187,7 @@ gsap.from(".aboutsection-content p", {
   scrollTrigger: {
     trigger: ".aboutsection",
     start: "top 60%",
-    toggleActions: "play pause restart reverse",
+    toggleActions: "play none none none",
   },
 });
 
@@ -196,7 +200,7 @@ gsap.from(".contact-us", {
   scrollTrigger: {
     trigger: ".contact-us",
     start: "top 70%",
-    toggleActions: "play pause restart reverse",
+    toggleActions: "play none none none",
   },
 });
 
@@ -210,7 +214,7 @@ gsap.from(".icons img", {
   scrollTrigger: {
     trigger: ".icons",
     start: "top 90%",
-    toggleActions: "play pause restart reverse",
+    toggleActions: "play none none none",
   },
 });
 
