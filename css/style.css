@@ -223,6 +223,9 @@ nav li:last-child {
   margin-bottom: 2rem;
   /* text-align: left; */
 }
+#floating-diamond {
+  position: relative;
+}
 .aboutsection-content {
   color: white;
   line-height: 2.5rem;

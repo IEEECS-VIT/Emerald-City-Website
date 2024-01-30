@@ -22,6 +22,7 @@
   <meta name="theme-color" content="#000103">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/split-type"></script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -122,9 +123,9 @@
       </p></div>
     </div>
     <div class="aboutsection-image">
-      <img class="aboutsection-image1" src="img/about-diamond.svg" alt="diamond">
+      <img id="floating-diamond" class="aboutsection-image1" src="img/about-diamond.svg" alt="diamond">
       <!-- <img  class="aboutsection-image2"src="img/about-diamond-border.svg" alt="" srcset=""> -->
-      <img class="aboutsection-mobileimg" src="img/about-mobileDiamond.svg" alt="small-diamond" srcset="">
+      <img id="mobileonly-diamond" class="aboutsection-mobileimg" src="img/about-mobileDiamond.svg" alt="small-diamond" srcset="">
     </div>
   </div>
 
@@ -134,7 +135,7 @@
       <p class="overlayText">Prizes</p>
     </div>
     <div class="gridContainer">
-      <img src="img/debris.svg" alt="debris" class="debrisImage">
+      <img id="debris" src="img/debris.svg" alt="debris" class="debrisImage">
       <br><br>
       <div class="prizes">
         <div class="prizePool">
