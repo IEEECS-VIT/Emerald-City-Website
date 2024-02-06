@@ -5,31 +5,29 @@
 //   cursor.style.top = e.clientY + 'px';
 // });
 
-
 // Animations
 const tl = gsap.timeline();
 
-tl.from('.reg', {
+tl.from(".reg", {
   duration: 3,
   scale: 4,
   opacity: 0,
-  ease: 'power2.out',
-})
-.to('.reg', {
+  ease: "power2.out",
+}).to(".reg", {
   duration: 0,
-  x: '0%',
+  x: "0%",
   scale: 1,
   onComplete: () => {
-    gsap.to('.mpg', {
+    gsap.to(".mpg", {
       duration: 1,
-      textShadow: '0 0 20px rgba(0, 255, 0, 0.8)',
+      textShadow: "0 0 20px rgba(0, 255, 0, 0.8)",
       repeat: -1,
       yoyo: true,
     });
-    gsap.to('.nav-desk', {
+    gsap.to(".nav-desk", {
       duration: 0.5,
-      left: '0%',
-      ease: 'power2.out',
+      left: "0%",
+      ease: "power2.out",
     });
   },
 });
@@ -64,21 +62,21 @@ gsap.utils.toArray(".faq-item").forEach((faqItem, index) => {
   });
 });
 
-  gsap.to("#floating-diamond", {
-    y: 30,
-    duration: 1,
-    repeat: -1,
-    yoyo: true,
-    ease: "power1.inOut",
-  });
+gsap.to("#floating-diamond", {
+  y: 30,
+  duration: 1,
+  repeat: -1,
+  yoyo: true,
+  ease: "power1.inOut",
+});
 
-  gsap.to("#debris", {
-    y: 30,
-    duration: 1,
-    repeat: -1,
-    yoyo: true,
-    ease: "power1.inOut",
-  });
+gsap.to("#debris", {
+  y: 30,
+  duration: 1,
+  repeat: -1,
+  yoyo: true,
+  ease: "power1.inOut",
+});
 
 gsap.from(".aboutsection-header", {
   x: "-100%",
@@ -222,56 +220,53 @@ gsap.from(".icons img", {
 
 function toggleAnswer(element) {
   var answer = element.nextElementSibling;
-  var arrowIcon = element.querySelector('.arrow-icon');
+  var arrowIcon = element.querySelector(".arrow-icon");
 
-  if (answer.style.display === 'block') {
-      answer.style.animation = 'fadeOutUp 0.5s ease-out';
-      gsap.to(arrowIcon, { duration: 0.5, rotation: 0, ease: 'power2.out' });
+  if (answer.style.display === "block") {
+    //answer.style.animation = "fadeOutUp 0.1s ease-out";
+    gsap.to(arrowIcon, { duration: 0.1, rotation: 0, ease: "power2.out" });
 
-      setTimeout(function () {
-          answer.style.display = 'none';
-          answer.style.animation = '';
-      }, 500);
+    setTimeout(function () {
+      answer.style.display = "none";
+      answer.style.animation = "";
+    }, 500);
   } else {
-      answer.style.display = 'block';
-      answer.style.animation = 'fadeInDown 0.5s ease-out';
-      gsap.to(arrowIcon, { duration: 0.5, rotation: 180, ease: 'power2.out' });
+    answer.style.display = "block";
+    //answer.style.animation = "fadeInDown 0.1s ease-out";
+    gsap.to(arrowIcon, { duration: 0.1, rotation: 180, ease: "power2.out" });
   }
 }
 
-  var questionElements = document.querySelectorAll('.question');
-  questionElements.forEach(function(element) {
-      element.addEventListener('click', function() {
-          toggleAnswer(this);
-      });
-  });
-
-
-document.getElementById('toggleLink').addEventListener('click', function() {
-    var sidebar = document.querySelector('.sidebar');
-    sidebar.classList.toggle('open');
-    document.body.style.overflow = 'hidden';
-
-  });
-
-  document.getElementById('toggle2').addEventListener('click', function() {
-    var sidebar = document.querySelector('.sidebar');
-    sidebar.classList.toggle('open');
-
-    document.body.style.overflow = '';
-  });
-
-
-var sidebar = document.querySelector('.sidebar');
-var navLinks = document.querySelectorAll('.sidebar a');
-navLinks.forEach(function(link) {
-  link.addEventListener('click', function() {
-    sidebar.classList.remove('open');
-
-    document.body.style.overflow = '';
+var questionElements = document.querySelectorAll(".question");
+questionElements.forEach(function (element) {
+  element.addEventListener("click", function () {
+    toggleAnswer(this);
   });
 });
 
-document.getElementById('toggle2').addEventListener('click', function() {
-  sidebar.classList.toggle('open');
+document.getElementById("toggleLink").addEventListener("click", function () {
+  var sidebar = document.querySelector(".sidebar");
+  sidebar.classList.toggle("open");
+  document.body.style.overflow = "hidden";
+});
+
+document.getElementById("toggle2").addEventListener("click", function () {
+  var sidebar = document.querySelector(".sidebar");
+  sidebar.classList.toggle("open");
+
+  document.body.style.overflow = "";
+});
+
+var sidebar = document.querySelector(".sidebar");
+var navLinks = document.querySelectorAll(".sidebar a");
+navLinks.forEach(function (link) {
+  link.addEventListener("click", function () {
+    sidebar.classList.remove("open");
+
+    document.body.style.overflow = "";
+  });
+});
+
+document.getElementById("toggle2").addEventListener("click", function () {
+  sidebar.classList.toggle("open");
 });

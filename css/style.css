@@ -343,7 +343,6 @@ nav li:last-child {
     font-size: 26px;
     line-height: 35px;
     letter-spacing: 0.05em;
-    margin-top: 0;
     position: absolute;
     left: 50%;
     transform: translate(-50%, 15%);
@@ -491,7 +490,7 @@ nav li:last-child {
 @media only screen and (min-width: 768px) {
   .prizesLabel {
     position: relative;
-    display: block;
+    display: none;
     margin-left: auto;
     margin-right: auto;
   }
@@ -667,8 +666,8 @@ nav li:last-child {
   color: white;
   background: linear-gradient(
       0deg,
-      rgba(17, 227, 50, 0.15),
-      rgba(17, 227, 50, 0.15)
+      rgba(17, 227, 50, 0.35),
+      rgba(17, 227, 50, 0.35)
     ),
     linear-gradient(0deg, rgba(176, 223, 183, 0.3), rgba(176, 223, 183, 0.3));
 
@@ -725,24 +724,9 @@ nav li:last-child {
   height: auto;
 }
 
-.answer {
-  display: none;
-  position: relative;
-  opacity: 0.65;
-  background: #40c555a6;
-
-  color: black;
-  padding: 10px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  width: 100%;
-  box-sizing: border-box;
-  z-index: 0;
-}
-
 @keyframes fadeInDown {
   from {
-    transform: translateY(-30px);
+    transform: translateY(-30);
   }
   to {
     transform: translateY(0);
@@ -755,6 +739,25 @@ nav li:last-child {
   to {
     transform: translateY(-30px);
   }
+}
+
+.answer {
+  display: none;
+  position: relative;
+  opacity: 0.6;
+  background: #40c555a6;
+
+  color: white;
+  padding: 10px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 0;
+}
+
+.answer a {
+  color: white;
 }
 
 .contact-section {
