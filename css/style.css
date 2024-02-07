@@ -744,7 +744,7 @@ nav li:last-child {
 .answer {
   display: none;
   position: relative;
-  opacity: 0.6;
+  opacity: 0.85;
   background: #40c555a6;
 
   color: white;
