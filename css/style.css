@@ -363,6 +363,28 @@ nav li:last-child {
 /*
 
 
+Prizes Section
+
+
+*/
+.Prizes{
+  display: flex;
+  justify-content: space-around ;
+  align-items: center;
+}
+.designCrystal{
+  position:relative;
+  top: 20vh;
+
+}
+.prizesFinal{
+  position: relative;
+  left: -6vw;
+}
+/*
+
+
+
 
 */
 @media only screen and (max-width: 768px) {
@@ -407,6 +429,13 @@ nav li:last-child {
     margin-left: auto;
     float: right;
     z-index: -2;
+  }
+  .designCrystal{
+    display: none !important;
+  }
+  .prizesFinal{
+    width : 90%;
+    padding : 5vh;
   }
 
   .boxVector {
