@@ -252,6 +252,72 @@ nav li:last-child {
 .small-diamond {
   display: none;
 }
+
+.sponsoredBy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.galaxycinemaLogo {
+  margin-top: 5vh;
+  width: 45vw;
+  height: auto;
+}
+
+.slogan {
+  font-family: Playfair Display;
+  font-size: 5vh;
+  color: #f4f4f4;
+  opacity: 75%;
+}
+
+.lower {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: Playfair Display;
+  font-size: 3vh;
+  margin-top: 2vh;
+  color: #ffffff;
+}
+
+.galaxycinemasSocials {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  text-align: right;
+  float: right;
+  justify-content: space-between;
+  padding-right: 2vw;
+  margin-left: 5vw;
+}
+
+.galaxyAddress {
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+  justify-content: left;
+  float: left;
+  text-align: left;
+  border-left: 2px solid #05ff00;
+  padding-left: 2vw;
+}
+
+.socialcontainer {
+  float: right;
+  display: flex;
+  flex-direction: row;
+}
+
+.socialcontainer a {
+  margin-left: 1vw;
+  text-decoration: none;
+  color: #ffffff;
+}
+
 /* .aboutsection-image1{
   width: 25vw;
 } */
@@ -318,6 +384,27 @@ nav li:last-child {
 /*
 
 
+Prizes Section
+
+
+*/
+.Prizes {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.designCrystal {
+  position: relative;
+  top: 20vh;
+}
+.prizesFinal {
+  position: relative;
+  left: -6vw;
+}
+/*
+
+
+
 
 */
 @media only screen and (max-width: 768px) {
@@ -362,6 +449,13 @@ nav li:last-child {
     margin-left: auto;
     float: right;
     z-index: -2;
+  }
+  .designCrystal {
+    display: none !important;
+  }
+  .prizesFinal {
+    width: 90%;
+    padding: 5vh;
   }
 
   .boxVector {

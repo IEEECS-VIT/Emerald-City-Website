@@ -70,6 +70,14 @@ gsap.to("#floating-diamond", {
   ease: "power1.inOut",
 });
 
+gsap.to("#diamondCrystal", {
+  y: 30,
+  duration: 1,
+  repeat: -1,
+  yoyo: true,
+  ease: "power1.inOut",
+});
+
 gsap.to("#debris", {
   y: 30,
   duration: 1,
