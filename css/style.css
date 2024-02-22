@@ -277,26 +277,47 @@ nav li:last-child {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   font-family: Playfair Display;
   font-size: 3vh;
+  margin-top: 2vh;
   color: #ffffff;
+}
+
+.galaxycinemasSocials {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  text-align: right;
+  float: right;
+  justify-content: space-between;
+  padding-right: 2vw;
+  margin-left: 5vw;
 }
 
 .galaxyAddress {
   display: flex;
   flex-direction: column;
   align-items: right;
-  justify-content: right;
+  justify-content: left;
+  float: left;
+  text-align: left;
+  border-left: 2px solid #05ff00;
+  padding-left: 2vw;
 }
 
-.verticalLine {
-  color: #05ff00;
-  width: 100px;
-  position: absolute;
-  left: 50%;
-  right: 50%;
-  transform: rotate(90deg);
+.socialcontainer {
+  float: right;
+  display: flex;
+  flex-direction: row;
 }
+
+.socialcontainer a {
+  margin-left: 1vw;
+  text-decoration: none;
+  color: #ffffff;
+}
+
 /* .aboutsection-image1{
   width: 25vw;
 } */
@@ -367,17 +388,16 @@ Prizes Section
 
 
 */
-.Prizes{
+.Prizes {
   display: flex;
-  justify-content: space-around ;
+  justify-content: space-around;
   align-items: center;
 }
-.designCrystal{
-  position:relative;
+.designCrystal {
+  position: relative;
   top: 20vh;
-
 }
-.prizesFinal{
+.prizesFinal {
   position: relative;
   left: -6vw;
 }
@@ -430,12 +450,12 @@ Prizes Section
     float: right;
     z-index: -2;
   }
-  .designCrystal{
+  .designCrystal {
     display: none !important;
   }
-  .prizesFinal{
-    width : 90%;
-    padding : 5vh;
+  .prizesFinal {
+    width: 90%;
+    padding: 5vh;
   }
 
   .boxVector {
