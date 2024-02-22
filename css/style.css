@@ -252,6 +252,51 @@ nav li:last-child {
 .small-diamond {
   display: none;
 }
+
+.sponsoredBy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.galaxycinemaLogo {
+  margin-top: 5vh;
+  width: 45vw;
+  height: auto;
+}
+
+.slogan {
+  font-family: Playfair Display;
+  font-size: 5vh;
+  color: #f4f4f4;
+  opacity: 75%;
+}
+
+.lower {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: Playfair Display;
+  font-size: 3vh;
+  color: #ffffff;
+}
+
+.galaxyAddress {
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+  justify-content: right;
+}
+
+.verticalLine {
+  color: #05ff00;
+  width: 100px;
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  transform: rotate(90deg);
+}
 /* .aboutsection-image1{
   width: 25vw;
 } */
