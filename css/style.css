@@ -438,6 +438,7 @@ Prizes Section
   .gridContainer {
     display: block;
     position: relative;
+    padding-bottom: 50vh;
   }
 
   .debrisImage {
@@ -475,6 +476,10 @@ Prizes Section
     font-family: Chakra Petch;
     left: 50%;
     transform: translateX(-50%);
+  }
+
+  .prizePhone{
+    width: 60vw;
   }
 
   .prizePool p {
