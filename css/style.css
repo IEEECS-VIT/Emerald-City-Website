@@ -481,7 +481,26 @@ Prizes Section
   .prizePhone{
     width: 60vw;
   }
+  .sponsoredByLabel{
+    width: 60vw;
+  }
+  .slogan{
+    font-size: 1.3rem;
+  }
 
+  .galaxyAddress{
+    font-size: 0.75rem;
+  }
+
+  .galaxycinemaLogo {
+    margin-top: 5vh;
+    width: 87vw;
+    height: auto;
+  }
+  .galaxycinemasSocials{
+    padding-left: 8vw;
+    font-size: 0.7rem;
+  }
   .prizePool p {
     margin: 0;
   }
