@@ -424,6 +424,9 @@ Prizes Section
     margin-left: auto;
     margin-right: auto;
   }
+  .prizesLap{
+    display: none;
+  }
 
   .prizesLabel img {
     position: absolute;
@@ -622,6 +625,7 @@ Prizes Section
     margin-left: auto;
     margin-right: auto;
   }
+
 
   .prizesLabel img {
     position: absolute;
