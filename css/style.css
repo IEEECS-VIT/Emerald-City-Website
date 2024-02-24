@@ -318,10 +318,19 @@ nav li:last-child {
   color: #ffffff;
 }
 
+.fashion-factory-logo {
+  margin-top: 5vh;
+}
+
 /* .aboutsection-image1{
   width: 25vw;
 } */
 @media only screen and (max-width: 768px) {
+  .fashion-factory-logo {
+    width: 75vw;
+    height: auto;
+  }
+
   .small-diamond {
     display: block;
   }
