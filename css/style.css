@@ -205,6 +205,7 @@ nav li:last-child {
   display: flex;
   justify-content: flex-start;
   margin-left: 3vw;
+  margin-right:3vw;
   letter-spacing: 0.01rem;
   /* text-align: left; */
 }
@@ -310,12 +311,19 @@ nav li:last-child {
   float: right;
   display: flex;
   flex-direction: row;
+  margin-top: 0.5vh;
+  margin-bottom: 0.5vh;
 }
 
 .socialcontainer a {
   margin-left: 1vw;
   text-decoration: none;
   color: #ffffff;
+}
+
+.socialcontainer img{
+  width: 5vw;
+  height:auto; 
 }
 
 .fashion-factory-logo {
@@ -810,8 +818,9 @@ Prizes Section
   z-index: 1;
 }
 .arrow-icon {
-  width: 20px;
-  height: 20px;
+  margin-left:1vw;
+  width: 1vh;
+  height: auto;
 }
 .drawing {
   width: 100%;
