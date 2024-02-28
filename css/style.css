@@ -323,7 +323,7 @@ nav li:last-child {
 
 .socialcontainer img{
   width: 5vw;
-  height:auto; 
+  height:auto;
 }
 
 .fashion-factory-logo {
@@ -425,6 +425,9 @@ Prizes Section
 
 */
 @media only screen and (max-width: 768px) {
+  .arrow-icon {
+    display: none;
+  }
   .prizesLabel {
     position: relative;
     display: block;
